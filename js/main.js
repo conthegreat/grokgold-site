@@ -148,4 +148,121 @@
   } else {
     reveals.forEach(function (el) { el.classList.add("in"); });
   }
+
+  /* ---------- Optional Google Fonts ----------
+     Pages that omit the font tags contact Google only after Allow.
+     If a page already embeds a font link, Reject removes it for later
+     loads; it cannot undo a request the browser already sent.
+     Do not add analytics or other third-party scripts here.
+  */
+  var CONSENT_KEY = "grokgold_consent";
+  var CONSENT_MAX_AGE = 183 * 24 * 60 * 60 * 1000;
+  var FONT_CSS = "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap";
+
+  function readConsent() {
+    try {
+      var c = JSON.parse(localStorage.getItem(CONSENT_KEY) || "null");
+      if (!c || c.v !== 1 || !c.ts) return null;
+      if (isNaN(Date.parse(c.ts)) || Date.now() - Date.parse(c.ts) > CONSENT_MAX_AGE) return null;
+      return c;
+    } catch (e) { return null; }
+  }
+  function writeConsent(allowFonts) {
+    var c = { v: 1, fonts: !!allowFonts, ts: new Date().toISOString() };
+    try { localStorage.setItem(CONSENT_KEY, JSON.stringify(c)); } catch (e) { /* storage blocked */ }
+    return c;
+  }
+  function stripEmbeddedFonts() {
+    doc.documentElement.classList.add("fonts-declined");
+    doc.querySelectorAll('link[href*="fonts.googleapis.com"], link[href*="fonts.gstatic.com"]').forEach(function (el) {
+      if (el.parentNode) el.parentNode.removeChild(el);
+    });
+  }
+  function loadFonts() {
+    doc.documentElement.classList.remove("fonts-declined");
+    if (doc.getElementById("gf-css") || doc.querySelector('link[href*="fonts.googleapis.com/css"]')) return;
+    var pre1 = doc.createElement("link");
+    pre1.rel = "preconnect";
+    pre1.href = "https://fonts.googleapis.com";
+    var pre2 = doc.createElement("link");
+    pre2.rel = "preconnect";
+    pre2.href = "https://fonts.gstatic.com";
+    pre2.crossOrigin = "anonymous";
+    var css = doc.createElement("link");
+    css.id = "gf-css";
+    css.rel = "stylesheet";
+    css.href = FONT_CSS;
+    doc.head.appendChild(pre1);
+    doc.head.appendChild(pre2);
+    doc.head.appendChild(css);
+  }
+  function dismissBanner() {
+    var el = doc.getElementById("cookie-banner");
+    if (el && el.parentNode) el.parentNode.removeChild(el);
+    doc.body.classList.remove("cookie-open");
+  }
+  function showBanner() {
+    if (doc.getElementById("cookie-banner")) {
+      doc.body.classList.add("cookie-open");
+      var again = doc.querySelector("[data-cookie-reject]");
+      if (again) again.focus();
+      return;
+    }
+    var bar = doc.createElement("div");
+    bar.id = "cookie-banner";
+    bar.className = "cookie-banner";
+    bar.setAttribute("role", "region");
+    bar.setAttribute("aria-labelledby", "cookie-banner-title");
+    var inner = doc.createElement("div");
+    inner.className = "container";
+    var copy = doc.createElement("div");
+    var h = doc.createElement("h2");
+    h.id = "cookie-banner-title";
+    h.textContent = "Optional Google Fonts";
+    var p = doc.createElement("p");
+    p.appendChild(doc.createTextNode("Your device\u2019s fonts are used unless you allow Google Fonts, which sends your IP address to Google. A page that already includes a font link may have contacted Google before this choice. We do not use advertising or analytics cookies. "));
+    var link = doc.createElement("a");
+    link.href = "privacy.html#cookies";
+    link.textContent = "Privacy notice";
+    p.appendChild(link);
+    p.appendChild(doc.createTextNode("."));
+    copy.appendChild(h);
+    copy.appendChild(p);
+    var actions = doc.createElement("div");
+    actions.className = "cookie-actions";
+    var reject = doc.createElement("button");
+    reject.type = "button";
+    reject.className = "btn btn-ghost btn-sm";
+    reject.setAttribute("data-cookie-reject", "");
+    reject.textContent = "Reject";
+    var allow = doc.createElement("button");
+    allow.type = "button";
+    allow.className = "btn btn-ghost btn-sm";
+    allow.textContent = "Allow fonts";
+    actions.appendChild(reject);
+    actions.appendChild(allow);
+    inner.appendChild(copy);
+    inner.appendChild(actions);
+    bar.appendChild(inner);
+    var skip = doc.querySelector("a.skip");
+    if (skip && skip.nextSibling) doc.body.insertBefore(bar, skip.nextSibling);
+    else doc.body.insertBefore(bar, doc.body.firstChild);
+    doc.body.classList.add("cookie-open");
+    function choose(allowFonts) {
+      writeConsent(allowFonts);
+      if (allowFonts) loadFonts();
+      else stripEmbeddedFonts();
+      dismissBanner();
+      if (!allowFonts) location.reload();
+    }
+    reject.addEventListener("click", function () { choose(false); });
+    allow.addEventListener("click", function () { choose(true); });
+  }
+  var storedConsent = readConsent();
+  if (storedConsent && storedConsent.fonts) loadFonts();
+  else if (storedConsent) stripEmbeddedFonts();
+  else showBanner();
+  doc.querySelectorAll("[data-cookie-settings]").forEach(function (btn) {
+    btn.addEventListener("click", function () { showBanner(); });
+  });
 })();
