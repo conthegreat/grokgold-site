@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <script>document.documentElement.className="js";</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' https://www.gstatic.com 'unsafe-inline' blob:; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://*.googleapis.com https://*.gstatic.com https://*.firebaseio.com wss://*.firebaseio.com; form-action 'self' https://buy.stripe.com https://checkout.stripe.com; frame-src https://js.stripe.com https://buy.stripe.com https://checkout.stripe.com">
 <title>Privacy notice — GrokGold</title>
 <meta name="description" content="How GrokGold collects and uses personal data under UK GDPR.">
 <meta name="theme-color" content="#07090d">
@@ -20,7 +23,8 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307090d'/%3E%3Cpath d='M14 44 L24 20 H40 L50 44 Z' fill='%23d4af37'/%3E%3Cpath d='M24 20 H40 L36 30 H28 Z' fill='%23fff' opacity='.3'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -28,7 +32,8 @@
 <div class="risk-banner" role="note" aria-label="Risk warning"><div class="container"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#ffd36b" stroke-width="2" aria-hidden="true"><path d="M12 3l10 18H2L12 3z"/><path d="M12 10v5M12 18h.01"/></svg><p style="margin:0"><strong>Risk warning:</strong> CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. Most retail investor accounts lose money when trading CFDs (typically 70–80%+ according to providers’ published figures). You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. GrokGold is research software and education, not financial advice. <a href="risk-disclosure.html">Read the full risk disclosure</a>.</p></div></div>
 <header class="nav">
   <div class="container">
-    <a class="brand" href="index.html" aria-label="GrokGold home"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d27a"/><stop offset=".55" stop-color="#d4af37"/><stop offset="1" stop-color="#a8832a"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="#10151e" stroke="rgba(212,175,55,.35)"/><path d="M14 44 L24 20 H40 L50 44 Z" fill="url(#lg)"/><path d="M24 20 H40 L36 30 H28 Z" fill="#fff" opacity=".28"/></svg><span>GrokGold<small>AI gold research</small></span></a>
+    <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg-nav" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d27a"/><stop offset=".55" stop-color="#d4af37"/><stop offset="1" stop-color="#a8832a"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="#10151e" stroke="rgba(212,175,55,.35)"/><path d="M14 44 L24 20 H40 L50 44 Z" fill="url(#lg-nav)"/><path d="M24 20 H40 L36 30 H28 Z" fill="#fff" opacity=".28"/></svg><span>GrokGold<small>AI gold research</small></span></a>
+    <nav class="site-nav" aria-label="Primary">
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html#how">How it works</a></li>
@@ -38,9 +43,10 @@
       <li><a href="index.html#faq">FAQ</a></li>
       <li><a class="btn btn-gold btn-sm" href="index.html#waitlist">Join the waitlist</a></li>
     </ul>
+    </nav>
   </div>
 </header>
-<main id="main" class="legal">
+<main id="main" class="legal" tabindex="-1">
   <div class="container">
     <span class="eyebrow">Legal</span>
     <h1>Privacy notice</h1>
@@ -71,7 +77,7 @@
     <h2>6. Cookies and local storage</h2>
     <p>This site does not use advertising or tracking cookies. If our database is not yet connected, a waitlist form submission may be saved in your own browser&rsquo;s local storage; you can clear it at any time in your browser settings. Web fonts are loaded from Google Fonts.</p>
     <h2>7. Your rights</h2>
-    <p>You have the right to access, correct, delete, restrict or object to the use of your data, to data portability, and to withdraw consent. Email <a data-contact-email href="mailto:hello@example.com">hello@example.com</a>. You can also complain to the Information Commissioner&rsquo;s Office at <a href="https://ico.org.uk/" rel="noopener">ico.org.uk</a>.</p>
+    <p>You have the right to access, correct, delete, restrict or object to the use of your data, to data portability, and to withdraw consent. Email <a data-contact-email href="mailto:hello@example.com">hello@example.com</a>. You can also complain to the Information Commissioner&rsquo;s Office at <a href="https://ico.org.uk/" rel="noopener noreferrer">ico.org.uk</a>.</p>
     <h2>8. Changes</h2>
     <p>We will post any updates to this notice on this page.</p>
 
@@ -85,19 +91,19 @@
     </div>
     <div class="footer-grid">
       <div>
-        <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d27a"/><stop offset=".55" stop-color="#d4af37"/><stop offset="1" stop-color="#a8832a"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="#10151e" stroke="rgba(212,175,55,.35)"/><path d="M14 44 L24 20 H40 L50 44 Z" fill="url(#lg)"/><path d="M24 20 H40 L36 30 H28 Z" fill="#fff" opacity=".28"/></svg><span>GrokGold<small>AI gold research</small></span></a>
-        <p class="muted small" style="margin-top:14px">Multi-agent research and signals for gold, with a private UK residential connection from <a data-proxypi="url" href="https://proxypi.co.uk/">ProxyPi</a>.</p>
+        <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg-foot" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d27a"/><stop offset=".55" stop-color="#d4af37"/><stop offset="1" stop-color="#a8832a"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="#10151e" stroke="rgba(212,175,55,.35)"/><path d="M14 44 L24 20 H40 L50 44 Z" fill="url(#lg-foot)"/><path d="M24 20 H40 L36 30 H28 Z" fill="#fff" opacity=".28"/></svg><span>GrokGold<small>AI gold research</small></span></a>
+        <p class="muted small" style="margin-top:14px">Multi-agent research and signals for gold, with a private UK residential connection from <a data-proxypi="url" href="https://proxypi.co.uk/" rel="noopener noreferrer" target="_blank">ProxyPi</a>.</p>
       </div>
-      <div><h4>Product</h4><ul>
+      <div><h2 class="footer-heading">Product</h2><ul>
         <li><a href="index.html#how">How it works</a></li>
         <li><a href="index.html#features">Features</a></li>
         <li><a href="index.html#pricing">Pricing</a></li>
         <li><a href="index.html#waitlist">Waitlist</a></li></ul></div>
-      <div><h4>Private Stack</h4><ul>
+      <div><h2 class="footer-heading">Private Stack</h2><ul>
         <li><a href="index.html#proxies">Why residential IPs</a></li>
-        <li><a data-proxypi="pricingUrl" href="https://proxypi.co.uk/pricing">ProxyPi pricing</a></li>
-        <li><a data-proxypi="trialUrl" href="https://proxypi.co.uk/signup/trial">Free 100&nbsp;MB trial</a></li></ul></div>
-      <div><h4>Legal</h4><ul>
+        <li><a data-proxypi="pricingUrl" href="https://proxypi.co.uk/pricing" rel="noopener noreferrer" target="_blank">ProxyPi pricing</a></li>
+        <li><a data-proxypi="trialUrl" href="https://proxypi.co.uk/signup/trial" rel="noopener noreferrer" target="_blank">Free 100&nbsp;MB trial</a></li></ul></div>
+      <div><h2 class="footer-heading">Legal</h2><ul>
         <li><a href="risk-disclosure.html">Risk disclosure</a></li>
         <li><a href="terms.html">Terms of service</a></li>
         <li><a href="privacy.html">Privacy notice</a></li>
@@ -106,7 +112,7 @@
     <div class="footer-bottom"><span>&copy; <span data-year>2026</span> GrokGold. All rights reserved.</span><span>Made in the UK · Not financial advice</span></div>
   </div>
 </footer>
-<script src="js/config.js"></script>
+<script src="js/config.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>
