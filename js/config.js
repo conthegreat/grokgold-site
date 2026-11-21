@@ -1,5 +1,5 @@
 /*
- * GrokGold site configuration — edit this file to go live.
+ * Gold Radar site configuration — edit this file to go live.
  *
  * buyLinks: paste the checkout URL for each product (for example a Gumroad link).
  * While a link is empty, that button scrolls to the newsletter signup.
@@ -10,7 +10,7 @@
  * NEVER put a secret key in this file.
  */
 window.GROKGOLD_CONFIG = {
-  brand: "GrokGold",
+  brand: "Gold Radar",
   contactEmail: "",
 
   buyLinks: {

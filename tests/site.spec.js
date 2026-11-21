@@ -521,3 +521,49 @@ test.describe("pricing buttons", () => {
     await expect(page.locator("#wl-plan")).toHaveValue("enterprise");
   });
 });
+
+test.describe("Gold Radar brand and Telegram channel", () => {
+  test("home leads with the live desk and keeps Grok in the disclaimer only", async ({ page }) => {
+    await page.goto("./");
+    await expect(page).toHaveTitle("Gold Radar: live gold research alerts");
+    await expect(page.locator("main h1")).toHaveText("Never miss what moves gold.");
+    await expect(page.locator("main")).toContainText("Telegram alerts before CPI, NFP and FOMC");
+    await expect(page.locator("main")).toContainText("Pro at about £9/mo coming soon");
+    await expect(page.locator("main")).toContainText("Gold Radar Research Kit");
+    await expect(page.locator("main")).toContainText("The Gold Radar Weekly");
+    const joins = page.locator('a[href="https://t.me/goldradaruk"]');
+    expect(await joins.count()).toBeGreaterThan(1);
+    const count = await joins.count();
+    for (let i = 0; i < count; i += 1) {
+      await expect(joins.nth(i)).toHaveAttribute("target", "_blank");
+      await expect(joins.nth(i)).toHaveAttribute("rel", /noopener/);
+    }
+    const text = await page.locator("body").innerText();
+    expect(text).not.toMatch(/GrokGold/i);
+    expect(text.match(/grok/gi)).toEqual(["Grok"]);
+  });
+
+  test("the kit FAQ is the only compatibility note", async ({ page }) => {
+    await page.goto("kit.html");
+    await expect(page.locator("main h1")).toHaveText("Gold Radar Research Kit");
+    await expect(page.locator("#faq")).toContainText("works with any AI agent tool that has scheduling and web search, e.g. Grok Bot");
+    const text = await page.locator("body").innerText();
+    expect(text).not.toMatch(/GrokGold/);
+    expect(text).toContain("Not affiliated with Trading 212, X or Grok Bot");
+  });
+
+  test("the desk joins the live channel and leaves Pro closed", async ({ page }) => {
+    await page.goto("desk/");
+    await expect(page.locator("header .brand")).toContainText("Gold Radar");
+    await expect(page.locator("body")).not.toContainText("GrokGold");
+    const join = page.locator("#tg-body a");
+    await expect(join).toHaveAttribute("href", "https://t.me/goldradaruk");
+    await expect(join).toHaveAttribute("target", "_blank");
+    await expect(join).toHaveAttribute("rel", /noopener/);
+    await expect(join).toContainText("Join on Telegram");
+    await expect(page.locator("#plans-body")).toContainText(/Not on sale/);
+    await expect(page.locator("#plans-body")).toContainText(/not open/i);
+    await expect(page.locator('#plans-body a[href*="stripe.com"]')).toHaveCount(0);
+    expect(await page.locator("body").innerText()).not.toMatch(/grok/i);
+  });
+});

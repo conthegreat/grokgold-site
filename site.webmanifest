@@ -1,0 +1,17 @@
+{
+  "name": "Gold Radar",
+  "short_name": "Gold Radar",
+  "description": "Gold Radar: live gold research alerts.",
+  "start_url": ".",
+  "display": "browser",
+  "background_color": "#07090d",
+  "theme_color": "#07090d",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

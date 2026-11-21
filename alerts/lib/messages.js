@@ -59,7 +59,7 @@ function eventFacts(event) {
 export function messagePre({ kind, event, minutes }) {
   const heading = kind === "pre15" ? "15-minute heads-up" : "60-minute heads-up";
   const text = [
-    `<b>GrokGold Desk · ${heading}</b>`,
+    `<b>Gold Radar · ${heading}</b>`,
     "High-impact US data is approaching. This is a calendar notice only.",
     "",
     ...eventFacts(event),
@@ -75,7 +75,7 @@ export function messagePre({ kind, event, minutes }) {
 
 export function messagePost(event) {
   const text = [
-    "<b>GrokGold Desk · Figure printed</b>",
+    "<b>Gold Radar · Figure printed</b>",
     "The calendar feed now has an actual for this high-impact US release.",
     "",
     ...eventFacts(event),
@@ -125,7 +125,7 @@ export function messageDigest({ now, price, calendar, news }) {
     ? headlines.map(headlineLine)
     : ["No headlines in the latest fetch."];
   const text = [
-    "<b>GrokGold Desk · Morning digest</b>",
+    "<b>Gold Radar · Morning digest</b>",
     `${escHtml(londonDate)} · morning note, scheduled for 07:00 UK`,
     "",
     "<b>Gold price</b>",
@@ -156,7 +156,7 @@ export function messageBrief(brief) {
   });
   const summary = escHtml(clip(brief.summary_markdown.replace(/\s+/g, " ").trim(), 700));
   const text = [
-    `<b>GrokGold Desk · Research brief</b>`,
+    `<b>Gold Radar · Research brief</b>`,
     `${escHtml(brief.type.replace("_", " "))} · ${escHtml(formatWhen(brief.created_utc))}`,
     "",
     `<b>${escHtml(clip(brief.title, 180))}</b>`,

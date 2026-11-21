@@ -423,7 +423,7 @@
     const channel = httpUrl(cfg.TELEGRAM_CHANNEL_URL || "");
     const stripe = httpUrl(cfg.STRIPE_PRO_LINK || "");
     tgBody.innerHTML = channel
-      ? `<p>The morning digest, and any other note the connected channel receives, is general market information.</p><a class="btn btn-gold" href="${esc(channel)}">Get alerts on Telegram</a>`
+      ? `<p>The morning digest, and any other note the connected channel receives, is general market information.</p><a class="btn btn-gold" href="${esc(channel)}" target="_blank" rel="noopener noreferrer">Join on Telegram<span class="sr-only"> (opens in a new tab)</span></a>`
       : `<p class="coming">Telegram alerts are coming soon.</p><p class="meta">The channel link is empty in the desk config, so there is nothing to join yet.</p>`;
     plansBody.innerHTML = `
       <div class="plans">
@@ -432,7 +432,7 @@
           <p class="amount">£0</p>
           <ul>
             <li>This dashboard</li>
-            <li>The daily 07:00 UK morning digest, once a channel is connected</li>
+            <li>The daily 07:00 UK morning digest on the Telegram channel</li>
             <li>No account and no login</li>
           </ul>
         </article>

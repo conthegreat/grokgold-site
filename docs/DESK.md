@@ -1,4 +1,4 @@
-# GrokGold Desk
+# Gold Radar
 
 A research page for gold (XAUUSD) and a Telegram alert pipeline. It runs on free GitHub Actions, free data feeds and GitHub Pages. There is no server to host and no login.
 
@@ -8,7 +8,7 @@ https://conthegreat.github.io/grokgold-site/desk/
 
 **General market information, not investment advice. CFDs are high risk.**
 
-GrokGold is not FCA-authorised. The desk must not be used to send buy or sell calls, entries, exits, targets, stops, position sizes or performance claims.
+Gold Radar is not FCA-authorised. The desk must not be used to send buy or sell calls, entries, exits, targets, stops, position sizes or performance claims.
 
 ## What you need to provide
 
@@ -25,7 +25,7 @@ Optional, later, in `desk/config.js` (this file is public — never put the bot 
 
 | Value | Effect when filled |
 |---|---|
-| `TELEGRAM_CHANNEL_URL` | Turns the “coming soon” note into a **Get alerts on Telegram** link. |
+| `TELEGRAM_CHANNEL_URL` | Public channel https://t.me/goldradaruk. Turns the “coming soon” note into a **Join on Telegram** link that opens in a new tab. |
 | `STRIPE_PRO_LINK` | Turns the Pro waitlist note into a button. Use a Stripe Payment Link (`https://buy.stripe.com/...`), never a secret key. |
 
 ## Compliance rules for anything you publish
@@ -41,7 +41,7 @@ Rules for new copy, including briefs your bots commit:
 - Do not claim a win rate, a return, or that the desk “made” or “lost” money. A price difference versus an earlier print is allowed when the series is named.
 - “Bull case” and “bear case” mean arguments in a note, shown side by side. They are not a recommendation.
 - Headline tone is a keyword count. Label it as headline tone, not a forecast.
-- Consensus forecast, previous and actual on the calendar are the data vendor’s figures, not GrokGold estimates.
+- Consensus forecast, previous and actual on the calendar are the data vendor’s figures, not Gold Radar estimates.
 - If a brief contains a trade instruction (`buy gold`, `sell gold`, `go long`, `go short`, `entry at`, `stop-loss`, `take-profit`, `position size`, `price target`), the pipeline holds it back. The dashboard shows a short explanation instead of the text, and Telegram does not send it.
 - Do not remove the risk line to make a message shorter.
 
@@ -141,7 +141,7 @@ There is one chat id. Free on the page means the dashboard plus the morning dige
 8. **Actions → Desk data and alerts**. If GitHub says workflows are disabled, enable them. Run the workflow with **Run workflow** once and read the log. A successful send prints `Sent <key>`. A missing secret prints `Dry-run`.
 9. The 15-minute schedule starts on its own once the workflow file is on the default branch. You do not need a separate switch beyond enabling Actions.
 
-Optional public link: after the channel exists, set `TELEGRAM_CHANNEL_URL` in `desk/config.js` to `https://t.me/yourchannel` (or the invite link) and commit that file. The dashboard button appears on the next Pages deploy.
+The public channel is https://t.me/goldradaruk. `TELEGRAM_CHANNEL_URL` in `desk/config.js` is that URL. The dashboard button opens it in a new tab.
 
 ## Telegram paid subscriptions
 
@@ -213,7 +213,7 @@ The checker includes a schema example. After the file is on disk, `node alerts/r
 - The week’s table with UK time, UTC, impact, forecast, previous and actual. Each row can be opened for the “why gold watchers follow this” line.
 - Headlines with tone chips and a tone gauge.
 - The latest brief, bull case and bear case side by side, and an archive when there is more than one.
-- “Get alerts on Telegram”, which says coming soon while `TELEGRAM_CHANNEL_URL` is empty.
+- “Join on Telegram”, linking to https://t.me/goldradaruk. An empty `TELEGRAM_CHANNEL_URL` still says coming soon.
 - Free (£0, dashboard and the morning digest) and Pro (planned, £9/month). Empty `STRIPE_PRO_LINK` shows the waitlist note. No login.
 
 “Last updated” uses the file timestamps, shown in UK time and UTC.

@@ -1,4 +1,4 @@
-const UA = "GrokGoldDesk/1.0 (research; +https://github.com/conthegreat/grokgold-site)";
+const UA = "GoldRadar/1.0 (research; +https://github.com/conthegreat/grokgold-site)";
 
 export async function getText(url, { timeoutMs = 12000, accept = "*/*" } = {}) {
   const ctrl = new AbortController();

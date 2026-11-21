@@ -8,8 +8,8 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://conthegreat.github.io/grokgold-site/assets/og-image.png</image:loc>
-      <image:title>GrokGold — build your own AI gold research desk</image:title>
-      <image:caption>Four agents. Research only. You stay in charge. Not investment advice.</image:caption>
+      <image:title>Gold Radar: live gold research alerts</image:title>
+      <image:caption>A live dashboard and Telegram alerts before CPI, NFP and FOMC. Research only. Not investment advice.</image:caption>
     </image:image>
   </url>
   <url>

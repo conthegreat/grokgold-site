@@ -31,7 +31,7 @@
     <text x="48" y="290" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="28" font-weight="700">The prompts</text>
     <text x="48" y="340" fill="#8b93a3" font-family="Inter, Liberation Sans, sans-serif" font-size="18">4 files</text>
     <text x="48" y="376" fill="#8b93a3" font-family="Inter, Liberation Sans, sans-serif" font-size="18">Copy, paste, run</text>
-    <text x="48" y="412" fill="#8b93a3" font-family="Inter, Liberation Sans, sans-serif" font-size="18">Written for Grok Bot</text>
+    <text x="48" y="412" fill="#8b93a3" font-family="Inter, Liberation Sans, sans-serif" font-size="18">Any agent with search</text>
   </g>
   <g transform="translate(940 230)">
     <rect width="380" height="520" rx="20" fill="#10151e" stroke="#ffffff" stroke-opacity="0.08"/>

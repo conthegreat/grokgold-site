@@ -86,7 +86,7 @@ export function validateBrief(raw, file) {
   const hit = instructionHit(scan);
   if (hit) {
     brief.held = true;
-    brief.hold_reason = "Held back because the text reads like a trade instruction. GrokGold Desk does not publish buy or sell calls, entries, exits, targets, stops or position sizes.";
+    brief.hold_reason = "Held back because the text reads like a trade instruction. Gold Radar does not publish buy or sell calls, entries, exits, targets, stops or position sizes.";
     brief.summary_markdown = brief.hold_reason;
     brief.bull_case = [];
     brief.bear_case = [];

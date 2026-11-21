@@ -322,7 +322,7 @@ export async function fetchNews(now = new Date()) {
     ok,
     fetched_utc: utcIso(now),
     tone_label: "Headline tone",
-    tone_disclaimer: "Keyword reading of the headline only. Not a forecast, not a rating, and not a view from GrokGold.",
+    tone_disclaimer: "Keyword reading of the headline only. Not a forecast, not a rating, and not a view from Gold Radar.",
     overall: overallTone(items),
     feeds: attempts,
     items,

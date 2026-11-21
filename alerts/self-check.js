@@ -103,6 +103,8 @@ check("actual comparison stays a figure comparison", () => {
   });
   assert.ok(text.endsWith(DISCLAIMER));
   assert.equal(text.split(DISCLAIMER).length, 2);
+  assert.match(text, /<b>Gold Radar · Figure printed<\/b>/);
+  assert.doesNotMatch(text.replace(/grokgold-site/g, ""), /grok/i);
   assert.match(text, /Actual \(calendar feed\): 0\.2%/);
   assert.doesNotMatch(text, /\b(buy|sell|entry|stop-loss|position size)\b/i);
 });
@@ -124,6 +126,8 @@ check("telegram HTML is escaped", () => {
   assert.match(text, /CPI &lt;script&gt;/);
   assert.match(text, /1 &lt; 2/);
   assert.match(text, /Watched &amp; discussed/);
+  assert.match(text, /<b>Gold Radar · 60-minute heads-up<\/b>/);
+  assert.doesNotMatch(text.replace(/grokgold-site/g, ""), /grok/i);
   assert.ok(text.endsWith(DISCLAIMER));
   assert.equal(escHtml(`a&b<c>`), "a&amp;b&lt;c&gt;");
 });

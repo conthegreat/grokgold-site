@@ -20,26 +20,27 @@
   <rect x="24" y="24" width="1152" height="582" rx="26" fill="none" stroke="#d4af37" stroke-opacity="0.28" stroke-width="1.5"/>
   <g transform="translate(72 72)">
     <rect width="64" height="64" rx="14" fill="#10151e" stroke="#d4af37" stroke-opacity="0.45"/>
-    <path d="M14 44 L24 20 H40 L50 44 Z" fill="url(#gold)"/>
-    <path d="M24 20 H40 L36 30 H28 Z" fill="#fff" opacity="0.28"/>
+    <g fill="none" stroke="url(#gold)" stroke-width="1.6">
+      <circle cx="32" cy="32" r="18" opacity="0.35"/>
+      <circle cx="32" cy="32" r="11" opacity="0.62"/>
+      <circle cx="32" cy="32" r="5" opacity="0.95"/>
+    </g>
+    <path d="M32 32 L45.2 18.8" stroke="#f3d27a" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="32" cy="32" r="2.15" fill="#f3d27a"/>
+    <circle cx="43.6" cy="20.4" r="2.7" fill="#f3d27a"/>
   </g>
-  <text x="156" y="102" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="32" font-weight="700">GrokGold</text>
-  <text x="156" y="128" fill="#d4af37" font-family="Inter, Liberation Sans, sans-serif" font-size="13" font-weight="600" letter-spacing="2.4">AI GOLD RESEARCH</text>
-  <text x="72" y="250" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="52" font-weight="700">Build your own</text>
-  <text x="72" y="318" fill="url(#gold)" font-family="Inter, Liberation Sans, sans-serif" font-size="52" font-weight="700">AI gold research desk.</text>
-  <text x="72" y="390" fill="#c5cbd6" font-family="Inter, Liberation Sans, sans-serif" font-size="24" font-weight="500">Four agents. Research only.</text>
-  <text x="72" y="428" fill="#c5cbd6" font-family="Inter, Liberation Sans, sans-serif" font-size="24" font-weight="500">You stay in charge.</text>
-  <text x="72" y="520" fill="#8b93a3" font-family="Inter, Liberation Sans, sans-serif" font-size="16" font-weight="500">Not investment advice</text>
-  <text x="72" y="548" fill="#8b93a3" font-family="Inter, Liberation Sans, sans-serif" font-size="16" font-weight="500">DIY kit £29 · Research Stack £34</text>
-  <rect x="720" y="86" width="404" height="458" rx="20" fill="#10151e" stroke="#ffffff" stroke-opacity="0.08"/>
-  <text x="752" y="132" fill="#d4af37" font-family="Inter, Liberation Sans, sans-serif" font-size="13" font-weight="700" letter-spacing="2.4">THE DESK</text>
-  <text x="752" y="196" fill="#d4af37" font-family="JetBrains Mono, DejaVu Sans Mono, monospace" font-size="16" font-weight="600">01</text>
-  <text x="800" y="196" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="24" font-weight="700">Calendar Watcher</text>
-  <text x="752" y="268" fill="#d4af37" font-family="JetBrains Mono, DejaVu Sans Mono, monospace" font-size="16" font-weight="600">02</text>
-  <text x="800" y="268" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="24" font-weight="700">Sentiment Scanner</text>
-  <text x="752" y="340" fill="#d4af37" font-family="JetBrains Mono, DejaVu Sans Mono, monospace" font-size="16" font-weight="600">03</text>
-  <text x="800" y="340" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="24" font-weight="700">Event Scanner</text>
-  <text x="752" y="412" fill="#d4af37" font-family="JetBrains Mono, DejaVu Sans Mono, monospace" font-size="16" font-weight="600">04</text>
-  <text x="800" y="412" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="24" font-weight="700">Research Analyst</text>
-  <text x="752" y="490" fill="#8b93a3" font-family="Inter, Liberation Sans, sans-serif" font-size="16" font-weight="500">They gather. You decide.</text>
+  <text x="156" y="102" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="32" font-weight="700">Gold Radar</text>
+  <text x="156" y="128" fill="#d4af37" font-family="Inter, Liberation Sans, sans-serif" font-size="13" font-weight="600" letter-spacing="2.2">LIVE GOLD RESEARCH ALERTS</text>
+  <text x="72" y="250" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="52" font-weight="700">Never miss</text>
+  <text x="72" y="318" fill="url(#gold)" font-family="Inter, Liberation Sans, sans-serif" font-size="52" font-weight="700">what moves gold.</text>
+  <text x="72" y="390" fill="#c5cbd6" font-family="Inter, Liberation Sans, sans-serif" font-size="24" font-weight="500">A live dashboard and Telegram alerts</text>
+  <text x="72" y="428" fill="#c5cbd6" font-family="Inter, Liberation Sans, sans-serif" font-size="24" font-weight="500">before CPI, NFP and FOMC.</text>
+  <text x="72" y="520" fill="#8b93a3" font-family="Inter, Liberation Sans, sans-serif" font-size="16" font-weight="500">Free · Pro about £9/mo, coming soon</text>
+  <text x="72" y="548" fill="#8b93a3" font-family="Inter, Liberation Sans, sans-serif" font-size="16" font-weight="500">Research only · Not investment advice</text>
+  <rect x="760" y="150" width="364" height="330" rx="20" fill="#10151e" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="792" y="198" fill="#d4af37" font-family="Inter, Liberation Sans, sans-serif" font-size="13" font-weight="700" letter-spacing="2.4">ALERTS</text>
+  <text x="792" y="252" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="22" font-weight="700">CPI</text>
+  <text x="792" y="302" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="22" font-weight="700">NFP</text>
+  <text x="792" y="352" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="22" font-weight="700">FOMC</text>
+  <text x="792" y="420" fill="#8b93a3" font-family="Inter, Liberation Sans, sans-serif" font-size="16" font-weight="500">Free to read. Pro coming soon.</text>
 </svg>
