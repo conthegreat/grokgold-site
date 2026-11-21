@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3d27a"/>
+      <stop offset="0.55" stop-color="#d4af37"/>
+      <stop offset="1" stop-color="#a8832a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.12" cy="0.08" r="0.72">
+      <stop offset="0" stop-color="#d4af37" stop-opacity="0.20"/>
+      <stop offset="1" stop-color="#d4af37" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="teal" cx="0.92" cy="0.9" r="0.5">
+      <stop offset="0" stop-color="#00bcd4" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#00bcd4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#07090d"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#teal)"/>
+  <rect x="24" y="24" width="1152" height="582" rx="26" fill="none" stroke="#d4af37" stroke-opacity="0.28" stroke-width="1.5"/>
+  <g transform="translate(72 72)">
+    <rect width="64" height="64" rx="14" fill="#10151e" stroke="#d4af37" stroke-opacity="0.45"/>
+    <path d="M14 44 L24 20 H40 L50 44 Z" fill="url(#gold)"/>
+    <path d="M24 20 H40 L36 30 H28 Z" fill="#fff" opacity="0.28"/>
+  </g>
+  <text x="156" y="102" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="32" font-weight="700">GrokGold</text>
+  <text x="156" y="128" fill="#d4af37" font-family="Inter, Liberation Sans, sans-serif" font-size="13" font-weight="600" letter-spacing="2.4">AI GOLD RESEARCH</text>
+  <text x="72" y="250" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="52" font-weight="700">Build your own</text>
+  <text x="72" y="318" fill="url(#gold)" font-family="Inter, Liberation Sans, sans-serif" font-size="52" font-weight="700">AI gold research desk.</text>
+  <text x="72" y="390" fill="#c5cbd6" font-family="Inter, Liberation Sans, sans-serif" font-size="24" font-weight="500">Four agents. Research only.</text>
+  <text x="72" y="428" fill="#c5cbd6" font-family="Inter, Liberation Sans, sans-serif" font-size="24" font-weight="500">You stay in charge.</text>
+  <text x="72" y="520" fill="#8b93a3" font-family="Inter, Liberation Sans, sans-serif" font-size="16" font-weight="500">Not investment advice</text>
+  <text x="72" y="548" fill="#8b93a3" font-family="Inter, Liberation Sans, sans-serif" font-size="16" font-weight="500">DIY kit £29 · Research Stack £34</text>
+  <rect x="720" y="86" width="404" height="458" rx="20" fill="#10151e" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="752" y="132" fill="#d4af37" font-family="Inter, Liberation Sans, sans-serif" font-size="13" font-weight="700" letter-spacing="2.4">THE DESK</text>
+  <text x="752" y="196" fill="#d4af37" font-family="JetBrains Mono, DejaVu Sans Mono, monospace" font-size="16" font-weight="600">01</text>
+  <text x="800" y="196" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="24" font-weight="700">Calendar Watcher</text>
+  <text x="752" y="268" fill="#d4af37" font-family="JetBrains Mono, DejaVu Sans Mono, monospace" font-size="16" font-weight="600">02</text>
+  <text x="800" y="268" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="24" font-weight="700">Sentiment Scanner</text>
+  <text x="752" y="340" fill="#d4af37" font-family="JetBrains Mono, DejaVu Sans Mono, monospace" font-size="16" font-weight="600">03</text>
+  <text x="800" y="340" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="24" font-weight="700">Event Scanner</text>
+  <text x="752" y="412" fill="#d4af37" font-family="JetBrains Mono, DejaVu Sans Mono, monospace" font-size="16" font-weight="600">04</text>
+  <text x="800" y="412" fill="#eef1f6" font-family="Inter, Liberation Sans, sans-serif" font-size="24" font-weight="700">Research Analyst</text>
+  <text x="752" y="490" fill="#8b93a3" font-family="Inter, Liberation Sans, sans-serif" font-size="16" font-weight="500">They gather. You decide.</text>
+</svg>
