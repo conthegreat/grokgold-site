@@ -1,0 +1,11 @@
+{
+  "name": "grokgold-site",
+  "private": true,
+  "description": "Playwright checks for the static GrokGold site. The site itself has no build step.",
+  "scripts": {
+    "test": "playwright test -c tests/playwright.config.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  }
+}

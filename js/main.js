@@ -4,6 +4,14 @@
   var CFG = window.GROKGOLD_CONFIG || {};
   var doc = document;
 
+  /* A <base> on the GitHub Pages 404 retargets "#id" at the site root. Pin those links to this URL. */
+  if (doc.querySelector("base[href]")) {
+    doc.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      var hash = a.getAttribute("href");
+      if (hash && hash.length > 1) a.setAttribute("href", location.pathname + location.search + hash);
+    });
+  }
+
   /* ---------- Mobile nav ---------- */
   var toggle = doc.querySelector(".nav-toggle");
   var navLinks = doc.getElementById("nav-links");

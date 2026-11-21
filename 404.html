@@ -2,11 +2,20 @@
 <html lang="en-GB" class="no-js">
 <head>
 <meta charset="utf-8">
-<script>document.documentElement.className="js";</script>
-<script>(function(){var p=location.pathname,m=p.match(/^\/grokgold-site\//);document.write('<base href="'+(m?"/grokgold-site/":"/")+'">');})();</script>
+<script>
+document.documentElement.className="js";
+(function(){
+  var p=location.pathname;
+  var sub=p==="/grokgold-site"||p.indexOf("/grokgold-site/")===0;
+  var root=sub?"/grokgold-site/":"/";
+  window.__GG_ROOT=root;
+  /* Root-absolute URLs: a JS-inserted <base> is invisible to the preload scanner, which would 404 relative css/js on a nested missing path. */
+  document.write('<base href="'+root+'"><link rel="stylesheet" href="'+root+'css/styles.css">');
+})();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self' https://gumroad.com https://*.gumroad.com; frame-src https://*.substack.com">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self' https://gumroad.com https://*.gumroad.com; frame-src https://*.substack.com">
 <title>Page not found — GrokGold</title>
 <meta name="description" content="That page is not on the GrokGold site.">
 <meta name="theme-color" content="#07090d">
@@ -16,8 +25,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap"></noscript>
+<noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap">
 <link rel="stylesheet" href="css/styles.css">
+</noscript>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -76,7 +87,6 @@
     <div class="footer-bottom"><span>&copy; <span data-year>2026</span> GrokGold. All rights reserved.</span><span>Research &amp; education only · Not investment advice</span></div>
   </div>
 </footer>
-<script src="js/config.js"></script>
-<script src="js/main.js" defer></script>
+<script>document.write('<script src="'+(window.__GG_ROOT||"/")+'js/config.js" defer><\/script><script src="'+(window.__GG_ROOT||"/")+'js/main.js" defer><\/script>');</script>
 </body>
 </html>
