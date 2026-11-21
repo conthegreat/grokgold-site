@@ -34,15 +34,13 @@ python3 -m http.server 8000
 
 ## Deploy: GitHub Pages (free)
 
-**Option A: deploy from branch (no workflow needed, recommended)**
+The workflow `.github/workflows/pages.yml` is included. It deploys the repo root on every push to `main` and when you run it manually (**Actions → Deploy to GitHub Pages → Run workflow**).
 
 1. Open the repo and go to **Settings → Pages → Build and deployment**.
-2. Set **Source: Deploy from a branch**, **Branch: `main`**, **Folder: `/ (root)`**, then **Save**.
-3. After about a minute the site is live at **https://conthegreat.github.io/grokgold-site/**. `.nojekyll` is already in the repo, so files are served as-is.
+2. Set **Source: GitHub Actions**, then **Save**.
+3. Push to `main`, or run the workflow manually. After about a minute the site is live at **https://conthegreat.github.io/grokgold-site/**. `.nojekyll` is already in the repo, so files are served as-is.
 
-**Option B: GitHub Actions workflow (optional)**
-
-The bot that pushed this repo couldn't write to `.github/workflows/` because its token has no `workflow` permission. If you'd rather deploy with Actions, create `.github/workflows/pages.yml` in the GitHub web UI (Add file → Create new file) with this content, then set **Settings → Pages → Source: GitHub Actions**:
+The workflow uses the official Pages actions (`actions/checkout`, `actions/configure-pages`, `actions/upload-pages-artifact` with `path: .`, `actions/deploy-pages`), with `contents: read`, `pages: write`, and `id-token: write`, and a `pages` concurrency group:
 
 ```yaml
 name: Deploy to GitHub Pages
@@ -80,6 +78,14 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
+
+**Alternative: deploy from a branch**
+
+If you would rather publish without Actions:
+
+1. Open the repo and go to **Settings → Pages → Build and deployment**.
+2. Set **Source: Deploy from a branch**, **Branch: `main`**, **Folder: `/ (root)`**, then **Save**.
+3. After about a minute the site is live at the same URL. Disable or remove `.github/workflows/pages.yml` if you only want branch deploys, so the two methods do not both publish.
 
 **Custom domain (optional):** add it under Settings → Pages and create a `CNAME` DNS record pointing to `conthegreat.github.io`. Then update the canonical/OG URLs in the HTML, plus `robots.txt` and `sitemap.xml`.
 
