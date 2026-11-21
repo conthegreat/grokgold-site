@@ -143,7 +143,7 @@ export async function fetchCalendar(now = new Date()) {
     feed_includes_actual: feedIncludesActual,
     actuals_note: feedIncludesActual
       ? "The feed included an actual field on at least one row."
-      : "This fetch did not include an actual field. Post-release alerts wait until a non-empty actual is present. Forecast and previous are the calendar vendor's published figures, not GrokGold estimates.",
+      : "This fetch did not include an actual field. Post-release alerts wait until a non-empty actual is present. Forecast and previous are the calendar vendor's published figures, not Gold Radar estimates.",
     filter: "USD high-impact and USD medium-impact events, plus any event whose title mentions gold, XAU, bullion or precious metals.",
     week_london_start: dates[0] || null,
     week_london_end: dates[dates.length - 1] || null,

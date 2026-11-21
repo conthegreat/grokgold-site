@@ -1,6 +1,6 @@
-# GrokGold — sales site
+# Gold Radar
 
-Static site for **GrokGold**: a DIY AI gold research kit (£29, one-off), **The Gold Desk Weekly** (free week-ahead, or £6/mo / £60/yr), and the **Research Stack** (£34: the kit plus 10GB of ProxyPi UK residential bandwidth).
+Static site for **Gold Radar**: live gold research alerts. The lead product is the free desk at `desk/` plus Telegram alerts before CPI, NFP and FOMC (https://t.me/goldradaruk), with Pro at about £9/mo coming soon. Also the **Gold Radar Research Kit** (£29, one-off), **The Gold Radar Weekly** (free week-ahead, or £6/mo / £60/yr), and the **Research Stack** (£34: the kit plus 10GB of ProxyPi UK residential bandwidth).
 
 Plain HTML, CSS and vanilla JS. **No build step.** Deploys on GitHub Pages or Vercel.
 
@@ -10,11 +10,11 @@ Plain HTML, CSS and vanilla JS. **No build step.** Deploys on GitHub Pages or Ve
 
 ```
 index.html            Home: four products (kit, newsletter, Research Stack, live desk), FAQ, signup
-kit.html              AI Gold Research Desk DIY kit
-newsletter.html       The Gold Desk Weekly
+kit.html              Gold Radar Research Kit
+newsletter.html       The Gold Radar Weekly
 sample-issue.html     Issue #0, with sources
 proxypi.html          Research Stack and ProxyPi plans (links out)
-desk/                 Live dashboard and Telegram alerts. Built separately. Do not edit desk/, alerts/ or data/ from this site.
+desk/                 Live Gold Radar dashboard. alerts/ sends the Telegram notes. data/ is the published JSON.
 risk-disclosure.html  Kept as on main. Legal copy is a separate change.
 terms.html            Kept as on main. Legal copy is a separate change.
 privacy.html          Kept as on main. Legal copy is a separate change.

@@ -1,4 +1,4 @@
-/* GrokGold — site behaviour. Vanilla JS, no build step. */
+/* Gold Radar — site behaviour. Vanilla JS, no build step. */
 (function () {
   "use strict";
   var CFG = window.GROKGOLD_CONFIG || {};
@@ -135,7 +135,7 @@
     box.textContent = "";
     var frame = doc.createElement("iframe");
     frame.src = url;
-    frame.title = "Subscribe to The Gold Desk Weekly";
+    frame.title = "Subscribe to The Gold Radar Weekly";
     frame.loading = "lazy";
     frame.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
     box.appendChild(frame);

@@ -1,4 +1,4 @@
-# Compliance notes — GrokGold
+# Compliance notes — Gold Radar
 
 **Internal note for Connor. Not legal advice. Not a customer-facing policy.**
 
@@ -18,13 +18,13 @@ Prices below are the ones on the site at `cb0a20f`. Confirm them at checkout. Th
 
 | Product | Price | What it is | Who takes the money |
 |---|---|---|---|
-| AI Gold Research Desk kit | £29 one-off | Guide, four prompts, schedules, risk-rules, journal templates. Digital download. | Gumroad, once `buyLinks.kit` is set. Confirm who the merchant of record is. |
-| The Gold Desk Weekly | Free week-ahead; £6/mo or £60/yr for dailies | Sourced gold briefing on Substack. | Substack. |
+| Gold Radar Research Kit | £29 one-off | Guide, four prompts, schedules, risk-rules, journal templates. Digital download. | Gumroad, once `buyLinks.kit` is set. Confirm who the merchant of record is. |
+| The Gold Radar Weekly | Free week-ahead; £6/mo or £60/yr for dailies | Sourced gold briefing on Substack. | Substack. |
 | Research Stack | £34 one-off | The kit plus 10GB of ProxyPi UK residential bandwidth. | Gumroad for the bundle. The bandwidth is ProxyPi’s product. |
-| GrokGold Desk | Free | Live dashboard at `desk/`, plus Telegram alerts (calendar heads-ups, release results, daily digest, AI bull and bear briefs). | No charge. |
+| Gold Radar | Free | Live dashboard at `desk/`, plus Telegram alerts (calendar heads-ups, release results, daily digest, AI bull and bear briefs). | No charge. |
 | Pro channel | About £9/mo, **not on sale** | Planned paid Telegram channel of the same research. | Telegram Stars or a Stripe Payment Link. Do not open either until the price, renewal and cancel route are shown first, and the solicitor has seen the channel. |
 
-`desk/`, `alerts/` and `data/` are built separately. This note does not edit them. The same “no advice, no signals, no execution” rule has to be true inside the desk and the Telegram messages.
+`desk/`, `alerts/` and `data/` ship in this repo. The same “no advice, no signals, no execution” rule has to be true inside the desk and the Telegram messages.
 
 ## Consumer law, in short
 
@@ -72,7 +72,7 @@ The legal pages do not embed a font link, so the choice is real there. The marke
 
 ## Names
 
-Not affiliated with Trading 212, X, or Grok Bot. “Trading 212” is a trade mark of its owner. Re-check the proprietor on the UK IPO register and EUIPO before launch. EU records reviewed earlier in this work named Trading 212 Group Limited; there have been transfers. Do not use their logo. The kit may tell a reader they can use Grok Bot. That is a tool the reader operates, not a partnership.
+Not affiliated with Trading 212, X, or Grok Bot. “Trading 212” is a trade mark of its owner. Re-check the proprietor on the UK IPO register and EUIPO before launch. EU records reviewed earlier in this work named Trading 212 Group Limited; there have been transfers. Do not use their logo. The kit FAQ may name one reader-operated agent tool as an example. That is not a partnership.
 
 Proxies are for reading public pages. They are not for evading broker rules, KYC, bans, residence rules, or the law. The Research Stack copy (“fewer blocks and CAPTCHAs”) should stay on the right side of that line. A solicitor should read `proxypi.html` with the acceptable-use clause.
 

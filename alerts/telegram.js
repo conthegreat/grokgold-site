@@ -1,5 +1,5 @@
 /**
- * Deliver GrokGold Desk alerts to a Telegram channel.
+ * Deliver Gold Radar alerts to a Telegram channel.
  * Missing TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID means dry-run: log only.
  * Dry-runs are not recorded as sent.
  */
