@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://conthegreat.github.io/grokgold-site/sitemap.xml
