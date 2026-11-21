@@ -1,0 +1,37 @@
+name: Desk data and alerts
+
+on:
+  schedule:
+    # Every 15 minutes. GitHub may start a scheduled run late; the digest
+    # window in alerts/lib/decide.js stays open until 08:30 UK for that reason.
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: grokgold-desk-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Use Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch data and send due alerts
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node alerts/run.js

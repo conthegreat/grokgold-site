@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GrokGold Desk — gold (XAUUSD) research</title>
+<meta name="description" content="GrokGold Desk is a research view of the gold price, the US calendar and headlines. General market information, not investment advice. CFDs are high risk.">
+<meta name="theme-color" content="#07090d">
+<link rel="canonical" href="https://conthegreat.github.io/grokgold-site/desk/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GrokGold Desk">
+<meta property="og:title" content="GrokGold Desk — gold (XAUUSD) research">
+<meta property="og:description" content="A research view of the gold price, the US calendar and headlines. Not investment advice.">
+<meta property="og:url" content="https://conthegreat.github.io/grokgold-site/desk/">
+<meta property="og:locale" content="en_GB">
+<meta name="robots" content="index,follow">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307090d'/%3E%3Cpath d='M14 44 L24 20 H40 L50 44 Z' fill='%23d4af37'/%3E%3Cpath d='M24 20 H40 L36 30 H28 Z' fill='%23fff' opacity='.3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="desk.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="risk-banner">
+    <div class="container risk-inner">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#ffd36b" stroke-width="2" aria-hidden="true"><path d="M12 3l10 18H2L12 3z"/><path d="M12 10v5M12 18h.01"/></svg>
+      <p>General market information, not investment advice. CFDs are high risk. <a href="../risk-disclosure.html">Risk disclosure</a></p>
+    </div>
+  </div>
+  <div class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#main" aria-label="GrokGold Desk">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#10151e" stroke="rgba(212,175,55,.4)"/><path d="M14 44 L24 20 H40 L50 44 Z" fill="#d4af37"/><path d="M24 20 H40 L36 30 H28 Z" fill="#fff" opacity=".28"/></svg>
+        <span>GrokGold Desk<small>Research only</small></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="desk-nav">Menu</button>
+      <nav id="desk-nav" aria-label="Desk">
+        <ul class="nav-links">
+          <li><a href="#price">Price</a></li>
+          <li><a href="#calendar">Calendar</a></li>
+          <li><a href="#news">Headlines</a></li>
+          <li><a href="#brief">Brief</a></li>
+          <li><a href="#alerts">Alerts</a></li>
+          <li><a href="../index.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<main id="main">
+  <div class="container">
+    <section class="intro" aria-labelledby="desk-title">
+      <p class="eyebrow">XAUUSD research desk</p>
+      <h1 id="desk-title">Gold, as the public record has it.</h1>
+      <p class="lede">A spot print, the US calendar, headlines and research notes. No trade calls, no entries, no exits, no targets, no stops and no position sizes.</p>
+      <p class="updated" id="page-updated">Loading the latest files…</p>
+    </section>
+
+    <div class="split" id="price">
+      <section class="card" aria-labelledby="price-title">
+        <div class="card-head">
+          <h2 id="price-title">Gold price</h2>
+          <p class="updated" id="price-updated"></p>
+        </div>
+        <div id="price-body"><p>Loading the price…</p></div>
+      </section>
+      <section class="card" aria-labelledby="next-title">
+        <div class="card-head">
+          <h2 id="next-title">Next high-impact event</h2>
+          <p class="updated" id="calendar-updated"></p>
+        </div>
+        <div id="next-body"><p>Loading the calendar…</p></div>
+      </section>
+    </div>
+
+    <section class="card section-gap" id="calendar" aria-labelledby="cal-title">
+      <div class="card-head">
+        <div>
+          <h2 id="cal-title">This week’s calendar</h2>
+          <p class="note-inline">USD high and medium impact, plus any title that mentions gold. Forecast and previous are the calendar vendor’s figures.</p>
+        </div>
+        <div class="filters" id="cal-filters" role="group" aria-label="Filter by impact"></div>
+      </div>
+      <div id="cal-body"><p>Loading the calendar…</p></div>
+    </section>
+
+    <section class="section-gap" id="news" aria-labelledby="news-title">
+      <div class="section-intro">
+        <h2 id="news-title">Headlines</h2>
+        <p>Quoted from the named publishers. GrokGold does not adopt a headline as its view. The tone chip is a keyword count, not a forecast.</p>
+      </div>
+      <div class="split news-split">
+        <section class="card" aria-labelledby="tone-title">
+          <h3 id="tone-title">Headline tone</h3>
+          <div id="tone-body"><p>Loading headlines…</p></div>
+        </section>
+        <section class="card" aria-labelledby="feed-title">
+          <div class="card-head">
+            <h3 id="feed-title">Latest</h3>
+            <p class="updated" id="news-updated"></p>
+          </div>
+          <div id="news-body"><p>Loading headlines…</p></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="card section-gap" id="brief" aria-labelledby="brief-title">
+      <div class="card-head">
+        <div>
+          <h2 id="brief-title">Research brief</h2>
+          <p class="note-inline">Bull case and bear case are arguments in the note, shown together. Neither is a recommendation.</p>
+        </div>
+      </div>
+      <div id="brief-body"><p>Loading briefs…</p></div>
+    </section>
+
+    <section class="section-gap" id="alerts" aria-labelledby="alerts-title">
+      <div class="section-intro">
+        <h2 id="alerts-title">Alerts</h2>
+        <p>No login. The dashboard on this page is free to read. Telegram delivery starts when the owner connects a channel.</p>
+      </div>
+      <div class="split">
+        <section class="card" id="telegram-cta" aria-labelledby="tg-title">
+          <h3 id="tg-title">Get alerts on Telegram</h3>
+          <div id="tg-body"></div>
+        </section>
+        <section class="card" aria-labelledby="plans-title">
+          <h3 id="plans-title">Free and Pro</h3>
+          <div id="plans-body"></div>
+        </section>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container">
+    <p class="footer-line">General market information, not investment advice. CFDs are high risk.</p>
+    <ul class="footer-links">
+      <li><a href="../risk-disclosure.html">Risk disclosure</a></li>
+      <li><a href="../terms.html">Terms</a></li>
+      <li><a href="../privacy.html">Privacy</a></li>
+      <li><a href="../index.html">GrokGold home</a></li>
+    </ul>
+    <p class="footer-meta">GrokGold is not authorised or regulated by the FCA. Prices and headlines can be delayed, incomplete or wrong. Nothing on this page is a personal recommendation.</p>
+  </div>
+</footer>
+<noscript>
+  <div class="container noscript">
+    <p>This desk needs JavaScript to read the data files. The warning above still applies: General market information, not investment advice. CFDs are high risk.</p>
+  </div>
+</noscript>
+<script src="config.js"></script>
+<script src="desk.js"></script>
+</body>
+</html>

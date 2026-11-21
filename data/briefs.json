@@ -1,0 +1,48 @@
+{
+  "updated_utc": "2026-11-21T22:49:09Z",
+  "count": 1,
+  "rejected": [],
+  "briefs": [
+    {
+      "id": "example-2026-11-21-reading-the-desk",
+      "created_utc": "2026-11-21T07:00:00Z",
+      "type": "daily",
+      "title": "Sample brief: themes in the public gold headlines, 21 November 2026",
+      "summary_markdown": "This file is the schema example for research bots. It describes themes in public headlines on this date. It is not a GrokGold forecast and not a recommendation.\n\nOn 21 November 2026 the free headline feeds were led by reports of a sharp weekly fall in the gold price. Publishers including Kitco, BullionVault, FOREX.com and Investing.com described a deep weekly decline. A separate Investing.com headline reported Goldman discussing central-bank demand, and another reported UBS discussing further weakness. Those are the publishers' words, summarised so the shape of a brief is visible.\n\nHow to read the rest of the desk: the large price is a named spot print. A sparkline that uses a different free series says so. Headline tone is a keyword count. Consensus forecast and previous on the calendar are the data vendor's figures.",
+      "bull_case": [
+        "Some headlines in the feed still discussed central-bank demand as a theme commentators attach to gold. That is a description of those headlines, not a case for taking a position.",
+        "A brief lists supportive themes on this side so they can be read next to the opposing themes. Listing a theme is not a recommendation."
+      ],
+      "bear_case": [
+        "Several headlines described a large weekly fall in the gold price and used words such as slump, selloff and weakness. That records the tone of the coverage.",
+        "A UBS headline in the feed discussed further weakness. That is that firm's published comment, not a GrokGold view."
+      ],
+      "sources": [
+        {
+          "title": "Google News search: gold price",
+          "url": "https://news.google.com/search?q=gold%20price&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "title": "Investing.com commodities news",
+          "url": "https://www.investing.com/news/commodities-news"
+        },
+        {
+          "title": "Kitco",
+          "url": "https://www.kitco.com/"
+        },
+        {
+          "title": "Forex Factory weekly calendar feed",
+          "url": "https://nfs.faireconomy.media/ff_calendar_thisweek.json"
+        },
+        {
+          "title": "Gold spot print (gold-api.com)",
+          "url": "https://api.gold-api.com/price/XAU"
+        }
+      ],
+      "example": true,
+      "file": "2026-11-21-0700.json",
+      "key_levels_watched_by_market_text": "Some headlines used the words support and uptrend. This desk does not turn those words into prices to act on. Nothing here is an entry, an exit, a target or a stop.",
+      "held": false
+    }
+  ]
+}
