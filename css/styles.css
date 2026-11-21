@@ -289,3 +289,27 @@ form.panel{background:linear-gradient(180deg,var(--panel-2),var(--panel));border
   .cta-band{padding:36px 22px}
   form.panel{padding:22px}
 }
+/* Research desk pages */
+.footer h2{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--dim);margin:0 0 14px;line-height:1.15}
+.signup{border:1px solid var(--line-gold);border-radius:var(--radius);padding:28px;background:linear-gradient(180deg,var(--panel-2),var(--panel))}
+.signup iframe{width:100%;min-height:320px;border:0;background:transparent;border-radius:12px}
+.figure{margin:0}
+.figure img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);background:var(--bg)}
+.figure figcaption{margin-top:8px}
+.shots{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:start}
+.chapter-list{list-style:none;padding:0;margin:0;counter-reset:ch}
+.chapter-list li{padding:12px 0 12px 52px;border-bottom:1px solid var(--line);position:relative;counter-increment:ch}
+.chapter-list li::before{content:counter(ch, decimal-leading-zero);position:absolute;left:0;top:12px;font-family:var(--mono);color:var(--gold);font-size:.85rem}
+.compare,.issue table{width:100%;border-collapse:collapse}
+.compare th,.compare td,.issue th,.issue td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.compare th,.issue th{color:var(--dim);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.issue table{font-size:.92rem;margin:1em 0 1.4em}
+.issue table th,.issue table td{border:1px solid var(--line)}
+.issue h2{font-size:1.45rem;margin-top:1.8em}
+.issue blockquote{margin:0 0 1.4em;padding:14px 16px;border-left:3px solid var(--gold);background:rgba(212,175,55,.06);border-radius:0 10px 10px 0}
+.issue .sources{padding-left:1.2em}
+.issue .sources a{word-break:break-word}
+.trust p:last-child{margin-bottom:0}
+
+.pricing.four{grid-template-columns:repeat(2,1fr)}
+@media (max-width:860px){.pricing.four,.shots{grid-template-columns:1fr}}

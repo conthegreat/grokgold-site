@@ -1,3 +1,9 @@
+# GrokGold project site: https://conthegreat.github.io/grokgold-site/
+# Allow the whole site. The 404 page sends its own noindex and is omitted
+# from the sitemap. Submit the Sitemap URL below directly if a crawler only
+# reads a robots.txt at the host root.
+
 User-agent: *
 Allow: /
+
 Sitemap: https://conthegreat.github.io/grokgold-site/sitemap.xml

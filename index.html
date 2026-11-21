@@ -5,333 +5,265 @@
 <script>document.documentElement.className="js";</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="color-scheme" content="dark">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' https://www.gstatic.com 'unsafe-inline' blob:; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://*.googleapis.com https://*.gstatic.com https://*.firebaseio.com wss://*.firebaseio.com; form-action 'self' https://buy.stripe.com https://checkout.stripe.com; frame-src https://js.stripe.com https://buy.stripe.com https://checkout.stripe.com">
-<title>GrokGold — AI research desk for gold (XAU/USD) · Trading 212 compatible</title>
-<meta name="description" content="GrokGold is a multi-agent AI research desk for gold (XAU/USD): event and sentiment scanners, a risk-first Decision Agent and Trading 212 execution guidance — plus a private UK residential connection with ProxyPi.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self' https://gumroad.com https://*.gumroad.com; frame-src https://*.substack.com">
+<title>GrokGold — build your own AI gold research desk</title>
+<meta name="description" content="A £29 DIY kit, The Gold Desk Weekly, and a £34 Research Stack with ProxyPi. Four agents gather the research. You decide. Not investment advice.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#07090d">
+<meta name="color-scheme" content="dark">
 <link rel="canonical" href="https://conthegreat.github.io/grokgold-site/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GrokGold">
-<meta property="og:title" content="GrokGold — AI research desk for gold (XAU/USD) · Trading 212 compatible">
-<meta property="og:description" content="GrokGold is a multi-agent AI research desk for gold (XAU/USD): event and sentiment scanners, a risk-first Decision Agent and Trading 212 execution guidance — plus a private UK residential connection with ProxyPi.">
+<meta property="og:title" content="GrokGold — build your own AI gold research desk">
+<meta property="og:description" content="A £29 DIY kit, The Gold Desk Weekly, and a £34 Research Stack with ProxyPi. Four agents gather the research. You decide. Not investment advice.">
 <meta property="og:url" content="https://conthegreat.github.io/grokgold-site/">
 <meta property="og:locale" content="en_GB">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GrokGold — AI research desk for gold (XAU/USD) · Trading 212 compatible">
-<meta name="twitter:description" content="GrokGold is a multi-agent AI research desk for gold (XAU/USD): event and sentiment scanners, a risk-first Decision Agent and Trading 212 execution guidance — plus a private UK residential connection with ProxyPi.">
+<meta property="og:image" content="https://conthegreat.github.io/grokgold-site/assets/og-image.png">
+<meta property="og:image:secure_url" content="https://conthegreat.github.io/grokgold-site/assets/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GrokGold: build your own AI gold research desk. Four agents. Research only. You stay in charge.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GrokGold — build your own AI gold research desk">
+<meta name="twitter:description" content="A £29 DIY kit, The Gold Desk Weekly, and a £34 Research Stack with ProxyPi. Four agents gather the research. You decide. Not investment advice.">
+<meta name="twitter:image" content="https://conthegreat.github.io/grokgold-site/assets/og-image.png">
+<meta name="twitter:image:alt" content="GrokGold: build your own AI gold research desk. Four agents. Research only. You stay in charge.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307090d'/%3E%3Cpath d='M14 44 L24 20 H40 L50 44 Z' fill='%23d4af37'/%3E%3Cpath d='M24 20 H40 L36 30 H28 Z' fill='%23fff' opacity='.3'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap"></noscript>
 <link rel="stylesheet" href="css/styles.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"GrokGold AI Trader","applicationCategory":"FinanceApplication","operatingSystem":"Web","description":"Multi-agent AI research and trade-idea service for gold (XAU/USD) CFDs. Not financial advice.","offers":[{"@type":"Offer","name":"Starter Signals","price":"29","priceCurrency":"GBP"},{"@type":"Offer","name":"Pro Managed","price":"99","priceCurrency":"GBP"},{"@type":"Offer","name":"Enterprise + Proxies","price":"249","priceCurrency":"GBP"}]}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://conthegreat.github.io/grokgold-site/#organization",
+      "name": "GrokGold",
+      "url": "https://conthegreat.github.io/grokgold-site/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://conthegreat.github.io/grokgold-site/assets/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://conthegreat.github.io/grokgold-site/assets/og-image.png",
+      "description": "GrokGold publishes a DIY AI gold research kit, The Gold Desk Weekly, and a Research Stack with ProxyPi. Research and education only. Not investment advice. Not affiliated with Trading 212, X or Grok Bot."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://conthegreat.github.io/grokgold-site/#website",
+      "url": "https://conthegreat.github.io/grokgold-site/",
+      "name": "GrokGold",
+      "inLanguage": "en-GB",
+      "publisher": { "@id": "https://conthegreat.github.io/grokgold-site/#organization" }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://conthegreat.github.io/grokgold-site/kit.html#product",
+      "name": "AI Gold Research Desk DIY Kit",
+      "url": "https://conthegreat.github.io/grokgold-site/kit.html",
+      "image": "https://conthegreat.github.io/grokgold-site/assets/kit-cover.png",
+      "brand": { "@type": "Brand", "name": "GrokGold" },
+      "category": "Digital educational download",
+      "description": "One-off download: a 20-page guide, four copy-paste prompts, schedules, risk-rules and journal templates for building your own AI gold research desk. Research and education only. Not investment advice.",
+      "offers": {
+        "@type": "Offer",
+        "name": "AI Gold Research Desk DIY Kit",
+        "price": "29.00",
+        "priceCurrency": "GBP",
+        "availability": "https://schema.org/InStock",
+        "url": "https://conthegreat.github.io/grokgold-site/kit.html",
+        "seller": { "@id": "https://conthegreat.github.io/grokgold-site/#organization" }
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://conthegreat.github.io/grokgold-site/proxypi.html#product",
+      "name": "Research Stack",
+      "url": "https://conthegreat.github.io/grokgold-site/proxypi.html",
+      "image": "https://conthegreat.github.io/grokgold-site/assets/og-image.png",
+      "brand": { "@type": "Brand", "name": "GrokGold" },
+      "category": "Digital educational download",
+      "description": "One-off bundle: the AI Gold Research Desk DIY kit plus 10GB of ProxyPi UK residential bandwidth for your agents' browsing. Research and education only. Not investment advice.",
+      "offers": {
+        "@type": "Offer",
+        "name": "Research Stack",
+        "price": "34.00",
+        "priceCurrency": "GBP",
+        "availability": "https://schema.org/InStock",
+        "url": "https://conthegreat.github.io/grokgold-site/proxypi.html",
+        "seller": { "@id": "https://conthegreat.github.io/grokgold-site/#organization" }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://conthegreat.github.io/grokgold-site/#faq",
+      "url": "https://conthegreat.github.io/grokgold-site/#faq",
+      "isPartOf": { "@id": "https://conthegreat.github.io/grokgold-site/#website" },
+      "inLanguage": "en-GB",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this financial advice?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No, it's general education and research." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it trade for me?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. It's read-only by default, and chapter 8 explains broker terms such as Trading 212's ban on algorithmic API trading." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which AI tool do I need?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It's written for Grok Bot and works with any agent tool that has scheduling and web search." }
+        },
+        {
+          "@type": "Question",
+          "name": "Refunds?",
+          "acceptedAnswer": { "@type": "Answer", "text": "14 days." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a broker?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No." }
+        }
+      ]
+    }
+  ]
+}
 </script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="risk-banner" role="note" aria-label="Risk warning"><div class="container"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#ffd36b" stroke-width="2" aria-hidden="true"><path d="M12 3l10 18H2L12 3z"/><path d="M12 10v5M12 18h.01"/></svg><p style="margin:0"><strong>Risk warning:</strong> CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. Most retail investor accounts lose money when trading CFDs (typically 70–80%+ according to providers’ published figures). You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. GrokGold is research software and education, not financial advice. <a href="risk-disclosure.html">Read the full risk disclosure</a>.</p></div></div>
+<div class="risk-banner" role="note" aria-label="Risk warning"><div class="container"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#ffd36b" stroke-width="2" aria-hidden="true"><path d="M12 3l10 18H2L12 3z"/><path d="M12 10v5M12 18h.01"/></svg><p style="margin:0">CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. Most retail investor accounts lose money when trading CFDs. Research &amp; education only. Not investment advice.</p></div></div>
 <header class="nav">
   <div class="container">
-    <a class="brand" href="#top"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg-nav" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d27a"/><stop offset=".55" stop-color="#d4af37"/><stop offset="1" stop-color="#a8832a"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="#10151e" stroke="rgba(212,175,55,.35)"/><path d="M14 44 L24 20 H40 L50 44 Z" fill="url(#lg-nav)"/><path d="M24 20 H40 L36 30 H28 Z" fill="#fff" opacity=".28"/></svg><span>GrokGold<small>AI gold research</small></span></a>
+    <a class="brand" href="index.html" aria-label="GrokGold home"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d27a"/><stop offset=".55" stop-color="#d4af37"/><stop offset="1" stop-color="#a8832a"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="#10151e" stroke="rgba(212,175,55,.35)"/><path d="M14 44 L24 20 H40 L50 44 Z" fill="url(#lg)"/><path d="M24 20 H40 L36 30 H28 Z" fill="#fff" opacity=".28"/></svg><span>GrokGold<small>AI gold research</small></span></a>
     <nav class="site-nav" aria-label="Primary">
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#how">How it works</a></li>
-      <li><a href="#dashboard">Dashboard</a></li>
-      <li><a href="#proxies">Private Stack</a></li>
-      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="kit.html">Kit</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="desk/">Desk</a></li>
+      <li><a href="proxypi.html">ProxyPi</a></li>
       <li><a href="#faq">FAQ</a></li>
-      <li><a class="btn btn-gold btn-sm" href="#waitlist">Join the waitlist</a></li>
+      <li><a class="btn btn-gold btn-sm" data-buy="kit" href="#signup">Get the kit</a></li>
     </ul>
     </nav>
   </div>
 </header>
-<main id="main" tabindex="-1">
-<span id="top"></span>
-<!-- HERO -->
-<section class="hero" aria-labelledby="hero-title">
+<main id="main">
+<section class="hero">
   <div class="container">
     <div>
-      <span class="eyebrow">GrokGold AI Trader · Launch waitlist open</span>
-      <h1 id="hero-title">A disciplined AI research desk <span class="gold-text">for gold</span>.</h1>
-      <p class="lead">Five specialist agents watch the economic calendar, market sentiment and price structure around XAU/USD, then hand you a clear, risk-checked plan for your Trading&nbsp;212 CFD account. You stay in control of every trade.</p>
+      <span class="eyebrow">GrokGold · Research desk</span>
+      <h1>Build your own AI gold research desk.</h1>
+      <p class="lead">Four AI agents watch the calendar, the headlines and the Fed for you, then check it all against your rules. Research only. You stay in charge.</p>
       <div class="hero-ctas">
-        <a class="btn btn-gold" href="#waitlist">Join the waitlist — lock in launch pricing</a>
-        <a class="btn btn-ghost" href="#how">See how it works</a>
+        <a class="btn btn-gold" data-buy="kit" href="#signup">Get the kit, £29</a>
+        <a class="btn btn-ghost" href="sample-issue.html">Read a free sample issue</a>
       </div>
       <ul class="hero-points">
-        <li>Risk rules before trade ideas</li>
-        <li>Plain-English rationale</li>
-        <li>Optional private UK home IP</li>
+        <li>£29 one-off download</li>
+        <li>Free weekly briefing</li>
+        <li>You decide</li>
       </ul>
     </div>
-    <div class="terminal" role="region" aria-label="Illustrative agent activity log">
-      <div class="terminal-head"><div class="dots"><i></i><i></i><i></i></div><span>grokgold · agent log</span><span class="mock-label">Illustrative mock data</span></div>
-      <div class="terminal-body" id="agent-terminal"><noscript>Agent activity preview requires JavaScript.</noscript></div>
-    </div>
+    <figure class="figure reveal">
+      <img src="assets/desk-diagram.png" width="1400" height="800" alt="Placeholder diagram. Calendar Watcher, Sentiment Scanner and Event Scanner feed the Research Analyst. You read the briefing and you decide.">
+    </figure>
   </div>
 </section>
 
-<!-- PROBLEM / SOLUTION -->
-<section class="section alt" id="why" aria-labelledby="why-title">
+<section class="section alt" id="why">
   <div class="container">
-    <div class="section-head reveal"><span class="eyebrow">The problem</span><h2 id="why-title">Gold moves on news you can&rsquo;t watch all day.</h2><p>Central-bank speeches, US data releases, risk-off headlines. Gold reacts in seconds, and leverage magnifies every mistake. Most retail traders are reacting late, sizing by gut and trading through events they didn&rsquo;t see coming.</p></div>
-    <div class="ps">
-      <div class="card problem reveal"><h3>Trading gold alone</h3><ul>
-        <li>Hours of chart and news watching to form one view</li>
-        <li>Surprise volatility around CPI, NFP and FOMC</li>
-        <li>Position sizes that ignore the stop distance</li>
-        <li>No written plan, so no way to review what went wrong</li>
-        <li>Generic &ldquo;signal groups&rdquo; with no reasoning or risk context</li></ul></div>
-      <div class="card solution reveal"><h3>With GrokGold</h3><ul>
-        <li>Agents scan events, sentiment and structure continuously</li>
-        <li>Event-aware guardrails flag no-trade windows in advance</li>
-        <li>Every idea arrives with entry zone, invalidation and size guidance</li>
-        <li>A journal of every plan and its reasoning for review</li>
-        <li>Built for Trading 212 CFD users. You approve every order.</li></ul></div>
-    </div>
+    <div class="section-head reveal"><span class="eyebrow">The problem</span><h2>The useful bit arrives while you are in a meeting.</h2><p>Following gold means 40 tabs: calendars, Fed-speak, X threads, newswires. Most of it is noise, and the important stuff lands at 13:30 when you're in a meeting.</p></div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="section" id="how" aria-labelledby="how-title">
+<section class="section" id="how">
   <div class="container">
-    <div class="section-head reveal"><span class="eyebrow">How it works</span><h2 id="how-title">Specialist agents, one accountable decision.</h2><p>Instead of a single black-box model, GrokGold splits the job into focused agents that check each other&rsquo;s work. The proprietary weighting and prompts stay private. The process doesn&rsquo;t.</p></div>
-    <div class="pipeline">
-      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12l6-6"/></svg></div><h3>Event &amp; Sentiment Scanners</h3><p class="muted">Track the economic calendar, central-bank commentary, headlines and market tone around gold and the US dollar.</p></div>
-      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4a3 3 0 0 0-3 3v1a3 3 0 0 0-2 5 3 3 0 0 0 3 5 3 3 0 0 0 5 1V5a3 3 0 0 0-3-1zM15 4a3 3 0 0 1 3 3v1a3 3 0 0 1 2 5 3 3 0 0 1-3 5 3 3 0 0 1-5 1"/></svg></div><h3>Gold Intelligence</h3><p class="muted">Turns raw inputs into context: trend, volatility regime, key levels and how gold behaved in similar conditions.</p></div>
-      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div><h3>Decision Agent</h3><p class="muted">Weighs the evidence and decides: long idea, short idea, or, often, <em>stand aside</em>. Every decision is written up with its reasoning.</p></div>
-      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><h3>Trading 212 Executor</h3><p class="muted">Converts an approved plan into precise order guidance for your Trading&nbsp;212 CFD account, with stop, target and size.</p></div>
-    </div>
-    <ul class="guardrails reveal">
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg>Max risk per idea</li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>News blackout windows</li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7l5 5 3-3 8 8"/><path d="M14 17h6v-6"/></svg>Daily loss circuit-breaker</li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>Full decision journal</li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>Human approval by default</li>
-    </ul>
-  </div>
-</section>
-
-<!-- FEATURES -->
-<section class="section alt" id="features" aria-labelledby="features-title">
-  <div class="container">
-    <div class="section-head center reveal"><span class="eyebrow">Features</span><h2 id="features-title">Everything a focused gold trader needs</h2><p>Narrow by design. GrokGold does one market and tries to do it carefully.</p></div>
+    <div class="section-head reveal"><span class="eyebrow">The desk</span><h2>Agents gather and organise. Humans judge and decide.</h2><p>Three agents collect. The Research Analyst turns that into a briefing you can read. The judgement stays with you.</p></div>
     <div class="grid g3">
-      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10 20a2 2 0 0 0 4 0"/></svg></div><h3>Real-time trade ideas</h3><p class="muted">Alerts by email and dashboard (Telegram planned) with entry zone, stop, targets and the &ldquo;why&rdquo;.</p></div>
-      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Event calendar guardrails</h3><p class="muted">High-impact releases are flagged ahead of time so you&rsquo;re not caught holding a position into the print.</p></div>
-      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Risk-first sizing</h3><p class="muted">Set your account size and risk per idea, and position guidance is calculated from the stop distance, not a gut feel.</p></div>
-      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div><h3>Sentiment pulse</h3><p class="muted">A daily read on news and social tone for gold, so you know when the crowd is leaning hard one way.</p></div>
-      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h10a4 4 0 0 1 4 4v12H8a4 4 0 0 1-4-4z"/><path d="M18 20h2V6"/></svg></div><h3>Decision journal</h3><p class="muted">Every plan, including the trades we <em>didn&rsquo;t</em> take, is logged so you can review and learn.</p></div>
-      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div><h3>Private by default</h3><p class="muted">Pair with a ProxyPi UK residential connection for a stable, private home IP while you research and trade.</p></div>
+      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg></div><h3>Calendar Watcher</h3><p class="muted">Release dates, central-bank meetings and the UK clock times, so the week is on one sheet.</p></div>
+      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h13"/></svg></div><h3>Sentiment Scanner</h3><p class="muted">Headlines and commentary around gold, with the sources kept attached to the note.</p></div>
+      <div class="card reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Event Scanner</h3><p class="muted">What is happening today, separated from what is merely scheduled, so the noise drops out.</p></div>
     </div>
+    <p class="reveal" style="margin-top:22px">All three feed the <strong>Research Analyst</strong>, which writes the briefing. You read it against your own rules.</p>
   </div>
 </section>
 
-<!-- DASHBOARD MOCK -->
-<section class="section" id="dashboard" aria-labelledby="dashboard-title">
+<section class="section alt" id="products">
   <div class="container">
-    <div class="section-head reveal"><span class="eyebrow">Inside the dashboard</span><h2 id="dashboard-title">Research, risk and your private connection in one place.</h2><p>A preview of the member dashboard. All numbers below are <strong>randomly generated placeholders</strong> for layout only. They are not results, back-tests or live data.</p></div>
-    <div class="dash">
-      <div class="card reveal">
-        <div class="dash-head"><h3 style="margin:0">XAU/USD research view</h3><span class="mock-label">Illustrative mock data</span></div>
-        <div class="kpis">
-          <div class="kpi"><span>Bias</span><b>Neutral</b></div>
-          <div class="kpi"><span>Volatility</span><b>Elevated</b></div>
-          <div class="kpi"><span>Next event</span><b>US CPI</b></div>
-        </div>
-        <svg class="chart" id="mock-chart" role="img" aria-label="Illustrative randomly generated line chart"></svg>
-        <p class="small muted" style="margin:10px 0 0">Chart line is a random walk drawn in your browser. It does not represent gold prices or any performance.</p>
-      </div>
-      <div class="card reveal">
-        <div class="dash-head"><h3 style="margin:0">Agent decisions</h3><span class="mock-label">Illustrative mock data</span></div>
-        <ul class="feed">
-          <li><span>Pre-CPI blackout</span><span class="pill wait">STAND ASIDE</span></li>
-          <li><span>Range low retest idea</span><span class="pill long">LONG IDEA</span></li>
-          <li><span>Failed breakout idea</span><span class="pill short">SHORT IDEA</span></li>
-          <li><span>Low-conviction setup</span><span class="pill wait">NO TRADE</span></li>
-        </ul>
-        <hr style="border:0;border-top:1px solid var(--line);margin:16px 0">
-        <div class="dash-head" style="margin-bottom:6px"><h3 style="margin:0;font-size:1rem">ProxyPi connection</h3><span class="tag teal">UK residential</span></div>
-        <div class="small muted">Data used this month (example)</div>
-        <div class="bar" role="img" aria-label="Example data used, 34 percent of the allowance"><i style="width:34%"></i></div>
-        <div class="small muted">Exit type: Exclusive Static (example) · Status: Online (example)</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROXIES -->
-<section class="section alt" id="proxies" aria-labelledby="proxies-title">
-  <div class="container proxy-wrap">
-    <div class="reveal">
-      <span class="eyebrow" style="color:#7ee6f3">Private Trading Stack · with ProxyPi</span>
-      <h2 id="proxies-title">Research and trade from a <span class="gold-text">real UK home IP</span>.</h2>
-      <p>If your research tools, alert bots or trading terminal run on a VPS or cloud server, they share data-centre IP ranges with thousands of strangers. <a data-proxypi="url" href="https://proxypi.co.uk/" rel="noopener noreferrer" target="_blank">ProxyPi</a> routes that traffic through a Raspberry Pi on a genuine UK household broadband line instead.</p>
-      <ul class="check">
-        <li><strong>Consistent UK location.</strong> Keep your own logins on one stable, UK residential IP instead of hopping between cloud ranges that trip security checks.</li>
-        <li><strong>Privacy for your research.</strong> Keep the IP of your home or office separate from data feeds, news scrapers and tooling. ProxyPi publishes a no-logs policy.</li>
-        <li><strong>Exclusive Static option.</strong> Reserve one named UK residential IP just for your account: £18 for 30 days (data extra).</li>
-        <li><strong>SOCKS5 or HTTP.</strong> Works with browsers, Python bots and most trading tools. Pay only for the data you use.</li>
-      </ul>
-      <p class="note teal"><strong>Use it fairly.</strong> A proxy is for privacy and a stable connection, <em>not</em> for getting around a broker&rsquo;s rules. Never use any proxy to bypass KYC, open multiple accounts where a broker forbids it, disguise your country of residence or evade restrictions. Doing so can break your broker&rsquo;s terms and the law, and may lead to your account being closed. Always follow Trading&nbsp;212&rsquo;s terms.</p>
-      <div class="hero-ctas" style="margin-top:22px">
-        <a class="btn btn-teal" data-proxypi="trialUrl" href="https://proxypi.co.uk/signup/trial" rel="noopener noreferrer" target="_blank">Start a free 100&nbsp;MB ProxyPi trial</a>
-        <a class="btn btn-ghost" data-proxypi="pricingUrl" href="https://proxypi.co.uk/pricing" rel="noopener noreferrer" target="_blank">See all ProxyPi plans</a>
-      </div>
-    </div>
-    <div class="card reveal">
-      <div class="dash-head"><h3 style="margin:0">ProxyPi data packs</h3><span class="tag teal">From proxypi.co.uk</span></div>
-      <table class="packs">
-        <caption class="sr-only">ProxyPi data pack prices in GBP</caption>
-        <thead><tr><th scope="col">Data</th><th scope="col">Per GB</th><th scope="col">Price</th></tr></thead>
-        <tbody>
-          <tr><td>10 GB</td><td>50p</td><td>£5.00</td></tr>
-          <tr><td>25 GB</td><td>35p</td><td>£8.75</td></tr>
-          <tr><td>50 GB</td><td>30p</td><td>£15.00</td></tr>
-          <tr><td>100 GB</td><td>25p</td><td>£25.00</td></tr>
-          <tr class="best"><td>250 GB <span class="tag teal">Best value</span></td><td>20p</td><td>£50.00</td></tr>
-          <tr><td>500 GB</td><td>16p</td><td>£80.00</td></tr>
-          <tr><td>1 TB</td><td>14p</td><td>£140.00</td></tr>
-        </tbody>
-      </table>
-      <p class="small muted" style="margin:14px 0 0">Add-on: Exclusive Static, £18 per 30 days (excludes data). Free 100&nbsp;MB trial, no card required. Prices as listed on proxypi.co.uk; check there for current pricing. The Enterprise plan below includes a ProxyPi allowance.</p>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section class="section" id="pricing" aria-labelledby="pricing-title">
-  <div class="container">
-    <div class="section-head center reveal"><span class="eyebrow">Launch pricing</span><h2 id="pricing-title">Simple monthly plans. Cancel any time.</h2><p>Founding-member prices for the first cohort. Join the waitlist to hold yours.</p></div>
-    <div class="pricing">
-      <div class="card price-card reveal">
-        <span class="tag">Starter Signals</span>
-        <p class="price">£29<small>/month</small></p>
-        <p class="muted small">For self-directed traders who want a second, disciplined opinion on gold.</p>
-        <ul>
-          <li>Daily gold briefing &amp; sentiment pulse</li>
-          <li>Trade ideas with entry, stop &amp; targets</li>
-          <li>Event calendar &amp; blackout alerts</li>
-          <li>Email alerts</li>
-          <li class="no">Executor order guidance</li>
-          <li class="no">ProxyPi allowance</li>
-        </ul>
-        <a class="btn btn-ghost btn-block" data-plan="starter" href="#waitlist">Choose Starter</a>
-        <p class="plan-hint small muted" style="margin:10px 0 0;text-align:center"></p>
-      </div>
+    <div class="section-head center reveal"><span class="eyebrow">What you can get</span><h2>Four products. You pick.</h2></div>
+    <div class="pricing four">
       <div class="card price-card featured reveal">
-        <span class="tag ribbon">Most popular</span>
-        <span class="tag">Pro Managed</span>
-        <p class="price">£99<small>/month</small></p>
-        <p class="muted small">The full agent desk with Trading&nbsp;212 execution guidance and your personal risk profile.</p>
-        <ul>
-          <li>Everything in Starter</li>
-          <li>Trading 212 Executor order guidance</li>
-          <li>Personal risk profile &amp; position sizing</li>
-          <li>Full decision journal &amp; monthly review</li>
-          <li>Priority email support</li>
-          <li class="no">ProxyPi allowance</li>
-        </ul>
-        <a class="btn btn-gold btn-block" data-plan="pro" href="#waitlist">Choose Pro</a>
-        <p class="plan-hint small muted" style="margin:10px 0 0;text-align:center"></p>
+        <span class="tag">DIY kit</span>
+        <h3>AI Gold Research Desk kit</h3>
+        <p class="price">£29<small> one-off</small></p>
+        <p class="muted small">Guide, 4 copy-paste prompts, schedules, risk-rules and journal templates. £29 one-off. Instant download.</p>
+        <a class="btn btn-gold btn-block" data-buy="kit" href="#signup">Get the kit, £29</a>
+        <p class="small muted" style="margin:12px 0 0;text-align:center"><a href="kit.html">See what is inside</a></p>
       </div>
       <div class="card price-card reveal">
-        <span class="tag">Enterprise + Proxies</span>
-        <p class="price">£249<small>/month</small></p>
-        <p class="muted small">The Private Trading Stack: Pro plus a dedicated UK residential connection.</p>
-        <ul>
-          <li>Everything in Pro</li>
-          <li>ProxyPi Exclusive Static UK IP included</li>
-          <li>Monthly ProxyPi data allowance included</li>
-          <li>API / webhook access to agent decisions</li>
-          <li>Onboarding call &amp; setup help</li>
-          <li>Up to 3 team seats</li>
-        </ul>
-        <a class="btn btn-ghost btn-block" data-plan="enterprise" href="#waitlist">Choose Enterprise</a>
-        <p class="plan-hint small muted" style="margin:10px 0 0;text-align:center"></p>
+        <span class="tag">Newsletter</span>
+        <h3>The Gold Desk Weekly</h3>
+        <p class="price">Free<small> or £6/mo</small></p>
+        <p class="muted small">A 5-minute, sourced gold macro briefing. Free weekly, or £6/mo for dailies.</p>
+        <a class="btn btn-ghost btn-block" href="newsletter.html">Read the newsletter</a>
+        <p class="small muted" style="margin:12px 0 0;text-align:center"><a href="sample-issue.html">Read Issue #0</a></p>
+      </div>
+      <div class="card price-card reveal">
+        <span class="tag">Bundle</span>
+        <h3>Research Stack</h3>
+        <p class="price">£34<small> one-off</small></p>
+        <p class="muted small">The kit plus 10GB of ProxyPi UK residential bandwidth for your agents' browsing. £34.</p>
+        <a class="btn btn-ghost btn-block" data-buy="researchStack" href="#signup">Get the Research Stack, £34</a>
+        <p class="small muted" style="margin:12px 0 0;text-align:center"><a href="proxypi.html">How the connection is used</a></p>
+      </div>
+      <div class="card price-card reveal">
+        <span class="tag">Live</span>
+        <h3>GrokGold Desk</h3>
+        <p class="price">Free</p>
+        <p class="muted small">A live gold research dashboard, plus Telegram alerts. Free, with a Pro tier planned at £9/mo.</p>
+        <a class="btn btn-ghost btn-block" href="desk/">Open the desk</a>
       </div>
     </div>
-    <p class="billing-note">Launch pricing, subject to change before general availability. Prices in GBP; VAT may apply. Subscriptions pay for research software and education only. They don&rsquo;t include brokerage, spreads or overnight funding fees charged by your CFD provider. No plan guarantees profit.</p>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="section alt" id="testimonials" aria-labelledby="testimonials-title">
-  <div class="container">
-    <div class="section-head center reveal"><span class="eyebrow">Early members</span><h2 id="testimonials-title">What beta users say</h2><p>We&rsquo;re collecting feedback from our private beta. Genuine, verified reviews will appear here. We will never publish invented testimonials.</p></div>
-    <div class="grid g3">
-      <div class="card placeholder-card reveal"><span class="mock-label">Placeholder</span><p class="quote" style="margin-top:12px">&ldquo;Beta member review will appear here once verified.&rdquo;</p><div class="quote-by"><div class="avatar" aria-hidden="true"></div><div><strong>Beta member</strong><div class="small muted">Placeholder · not a real review</div></div></div></div>
-      <div class="card placeholder-card reveal"><span class="mock-label">Placeholder</span><p class="quote" style="margin-top:12px">&ldquo;Beta member review will appear here once verified.&rdquo;</p><div class="quote-by"><div class="avatar" aria-hidden="true"></div><div><strong>Beta member</strong><div class="small muted">Placeholder · not a real review</div></div></div></div>
-      <div class="card placeholder-card reveal"><span class="mock-label">Placeholder</span><p class="quote" style="margin-top:12px">&ldquo;Beta member review will appear here once verified.&rdquo;</p><div class="quote-by"><div class="avatar" aria-hidden="true"></div><div><strong>Beta member</strong><div class="small muted">Placeholder · not a real review</div></div></div></div>
+<section class="section" id="trust">
+  <div class="container" style="max-width:800px">
+    <div class="note trust reveal">
+      <h2>What this isn't</h2>
+      <p>No signals. No buy/sell calls. No account access. No profit promises. We'll never ask for your broker login.</p>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="section" id="faq" aria-labelledby="faq-title">
+<section class="section alt" id="faq">
   <div class="container">
-    <div class="section-head center reveal"><span class="eyebrow">FAQ</span><h2 id="faq-title">Straight answers</h2></div>
+    <div class="section-head center reveal"><span class="eyebrow">FAQ</span><h2>Straight answers</h2></div>
     <div class="faq">
-      <details><summary>Is this financial advice?</summary><div><p>No. GrokGold is research software and educational content. Trade ideas are general and do not take your personal circumstances into account. You decide whether to place any trade. If you are unsure, speak to an FCA-authorised financial adviser.</p></div></details>
-      <details><summary>Does GrokGold guarantee profits or publish win rates?</summary><div><p>No. Nobody can guarantee profits from CFD trading, and most retail CFD accounts lose money. We don&rsquo;t publish unverified win rates or &ldquo;returns&rdquo;. If we ever publish performance data, it will be clearly labelled, independently verifiable and shown with its limitations.</p></div></details>
-      <details><summary>Will it place trades on my account automatically?</summary><div><p>By default, no. The Executor produces precise order guidance and you approve and place every order yourself in Trading&nbsp;212. We never ask for your Trading&nbsp;212 password, and we don&rsquo;t hold or move client money.</p></div></details>
-      <details><summary>Are you connected to Trading 212?</summary><div><p>No. GrokGold is independent and is not affiliated with, endorsed by or sponsored by Trading&nbsp;212. We design our guidance around how Trading&nbsp;212 CFD orders work because that&rsquo;s the platform our members use.</p></div></details>
-      <details><summary>Why gold only?</summary><div><p>Focus. Gold has its own drivers (real yields, the dollar, central-bank demand, risk sentiment) and a busy event calendar. Specialising lets the agents go deeper and lets us test guardrails properly.</p></div></details>
-      <details><summary>What does the ProxyPi part actually do?</summary><div><p>ProxyPi gives you a SOCKS5/HTTP proxy exiting from a Raspberry Pi on a real UK home broadband line. It&rsquo;s useful for keeping research bots and tools on a stable, private UK residential IP instead of a shared data-centre address. It is <strong>not</strong> for bypassing broker rules, KYC, geographic restrictions or multi-account limits, and you must not use it that way.</p></div></details>
-      <details><summary>Can I cancel?</summary><div><p>Yes. Plans are monthly and you can cancel at any time before your next billing date. See our <a href="terms.html">terms</a> for details, including your statutory cancellation rights as a UK consumer.</p></div></details>
-      <details><summary>Who is this not for?</summary><div><p>Anyone who can&rsquo;t afford to lose the money they trade with, anyone under 18, and anyone looking for a &ldquo;get rich quick&rdquo; system. If that&rsquo;s you, please don&rsquo;t trade CFDs.</p></div></details>
+      <details><summary>Is this financial advice?</summary><div><p>No, it's general education and research.</p></div></details>
+      <details><summary>Does it trade for me?</summary><div><p>No. It's read-only by default, and chapter 8 explains broker terms such as Trading 212's ban on algorithmic API trading.</p></div></details>
+      <details><summary>Which AI tool do I need?</summary><div><p>It's written for Grok Bot and works with any agent tool that has scheduling and web search.</p></div></details>
+      <details><summary>Refunds?</summary><div><p>14 days.</p></div></details>
+      <details><summary>Do I need a broker?</summary><div><p>No.</p></div></details>
     </div>
   </div>
 </section>
 
-<!-- WAITLIST -->
-<section class="section alt" id="waitlist" aria-labelledby="waitlist-title">
-  <div class="container form-wrap">
-    <div class="reveal">
-      <span class="eyebrow">Founding members</span>
-      <h2 id="waitlist-title">Get early access and a live demo.</h2>
-      <p>We&rsquo;re onboarding a small first cohort so we can support everyone properly. Join the waitlist to:</p>
-      <ul class="check">
-        <li>Hold founding-member launch pricing</li>
-        <li>Book a live walkthrough of the agent desk</li>
-        <li>Get a free ProxyPi trial set up alongside it if you want one</li>
-      </ul>
-      <p class="note">No spam. We&rsquo;ll only email you about GrokGold launch and your demo. Unsubscribe any time. See our <a href="privacy.html">privacy notice</a>.</p>
-    </div>
-    <form class="panel reveal" data-waitlist novalidate>
-      <div class="field-row">
-        <div class="field"><label for="wl-name">Name</label><input id="wl-name" name="name" autocomplete="name" required></div>
-        <div class="field"><label for="wl-email">Email</label><input id="wl-email" name="email" type="email" autocomplete="email" required></div>
-      </div>
-      <div class="field-row">
-        <div class="field"><label for="wl-plan">Interested in</label>
-          <select id="wl-plan" name="plan"><option value="undecided">Not sure yet</option><option value="starter">Starter Signals (£29)</option><option value="pro">Pro Managed (£99)</option><option value="enterprise">Enterprise + Proxies (£249)</option><option value="demo">Just a demo</option></select></div>
-        <div class="field"><label for="wl-exp">CFD experience</label>
-          <select id="wl-exp" name="experience"><option value="">Prefer not to say</option><option value="none">None yet</option><option value="lt1">Under 1 year</option><option value="1to3">1–3 years</option><option value="3plus">3+ years</option></select></div>
-      </div>
-      <div class="field"><label for="wl-msg">Anything we should know? <span class="muted">(optional)</span></label><textarea id="wl-msg" name="message" rows="3"></textarea></div>
-      <div class="hp" inert><label for="wl-website">Company website</label><input id="wl-website" type="text" name="website" tabindex="-1" autocomplete="off"></div>
-      <label class="consent"><input type="checkbox" name="proxies"> <span>I&rsquo;m interested in a ProxyPi UK residential connection too.</span></label>
-      <label class="consent"><input type="checkbox" name="risk" required> <span>I understand CFDs are high risk, I could lose all the money I trade with, and GrokGold is not financial advice.</span></label>
-      <label class="consent"><input type="checkbox" name="consent" required> <span>I agree to be contacted about GrokGold under the <a href="privacy.html">privacy notice</a>.</span></label>
-      <button class="btn btn-gold btn-block" type="submit">Join the waitlist</button>
-      <p class="form-status" id="waitlist-status" role="alert" aria-live="assertive" aria-atomic="true"></p>
-    </form>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section" id="close" aria-labelledby="close-title">
-  <div class="container">
-    <div class="cta-band reveal">
-      <span class="eyebrow">Discipline over hype</span>
-      <h2 id="close-title">Trade gold with a plan, not a hunch.</h2>
-      <p class="muted" style="max-width:560px;margin:0 auto 24px">Join the founding cohort of GrokGold and pair it with a private ProxyPi connection when you&rsquo;re ready.</p>
-      <div class="hero-ctas" style="justify-content:center;margin:0"><a class="btn btn-gold" href="#waitlist">Join the waitlist</a><a class="btn btn-ghost" href="risk-disclosure.html">Read the risk disclosure</a></div>
+<section class="section" id="signup">
+  <div class="container" style="max-width:760px">
+    <div class="section-head reveal"><span class="eyebrow">The Gold Desk Weekly</span><h2>Read it before you buy anything.</h2><p>The free sample is Issue #0. When signup is open, the form sits here.</p></div>
+    <div class="signup reveal" data-newsletter>
+      <p>The signup form is not open yet. Until then, the sample issue is the thing to read.</p>
+      <p style="margin-bottom:0"><a class="btn btn-gold" href="sample-issue.html">Read a free sample issue</a></p>
     </div>
   </div>
 </section>
@@ -339,33 +271,34 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-risk" role="note">
-      <p><strong>CFD risk warning.</strong> CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. Most retail investor accounts lose money when trading CFDs. You should consider whether you understand how CFDs work and whether you can afford to take the high risk of losing your money. Gold (XAU/USD) can move sharply around economic data and geopolitical events, and gaps can cause losses greater than a stop-loss level suggests.</p>
-      <p style="margin:0">GrokGold provides research software, educational content and trade ideas for information only. It is <strong>not financial advice</strong>, not a personal recommendation and not an offer to buy or sell any instrument. Past performance, back-tests and simulated results are not reliable indicators of future results. GrokGold is <strong>not affiliated with, endorsed by or sponsored by Trading 212</strong>; &ldquo;Trading 212&rdquo; is a trade mark of its owner and is used only to describe compatibility. GrokGold is not authorised or regulated by the Financial Conduct Authority and does not hold or manage client money.</p>
+      <p>CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. Most retail investor accounts lose money when trading CFDs. Research &amp; education only. Not investment advice.</p>
+      <p style="margin:0">Not affiliated with Trading 212, X or Grok Bot. Seller: [Legal entity name]. Contact: <span data-contact-email>[contact email]</span>.</p>
     </div>
     <div class="footer-grid">
       <div>
-        <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg-foot" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d27a"/><stop offset=".55" stop-color="#d4af37"/><stop offset="1" stop-color="#a8832a"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="#10151e" stroke="rgba(212,175,55,.35)"/><path d="M14 44 L24 20 H40 L50 44 Z" fill="url(#lg-foot)"/><path d="M24 20 H40 L36 30 H28 Z" fill="#fff" opacity=".28"/></svg><span>GrokGold<small>AI gold research</small></span></a>
-        <p class="muted small" style="margin-top:14px">Multi-agent research and signals for gold, with a private UK residential connection from <a data-proxypi="url" href="https://proxypi.co.uk/" rel="noopener noreferrer" target="_blank">ProxyPi</a>.</p>
+        <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lgf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d27a"/><stop offset=".55" stop-color="#d4af37"/><stop offset="1" stop-color="#a8832a"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="#10151e" stroke="rgba(212,175,55,.35)"/><path d="M14 44 L24 20 H40 L50 44 Z" fill="url(#lgf)"/><path d="M24 20 H40 L36 30 H28 Z" fill="#fff" opacity=".28"/></svg><span>GrokGold<small>AI gold research</small></span></a>
+        <p class="muted small" style="margin-top:14px">A DIY kit for an AI gold research desk, a weekly briefing, and an optional UK residential connection from <a data-proxypi="url" href="https://proxypi.co.uk/">ProxyPi</a>.</p>
       </div>
-      <div><h2 class="footer-heading">Product</h2><ul>
-        <li><a href="index.html#how">How it works</a></li>
-        <li><a href="index.html#features">Features</a></li>
-        <li><a href="index.html#pricing">Pricing</a></li>
-        <li><a href="index.html#waitlist">Waitlist</a></li></ul></div>
-      <div><h2 class="footer-heading">Private Stack</h2><ul>
-        <li><a href="index.html#proxies">Why residential IPs</a></li>
-        <li><a data-proxypi="pricingUrl" href="https://proxypi.co.uk/pricing" rel="noopener noreferrer" target="_blank">ProxyPi pricing</a></li>
-        <li><a data-proxypi="trialUrl" href="https://proxypi.co.uk/signup/trial" rel="noopener noreferrer" target="_blank">Free 100&nbsp;MB trial</a></li></ul></div>
-      <div><h2 class="footer-heading">Legal</h2><ul>
+      <div><h2>Product</h2><ul>
+        <li><a href="kit.html">DIY kit</a></li>
+        <li><a href="newsletter.html">The Gold Desk Weekly</a></li>
+        <li><a href="desk/">GrokGold Desk</a></li>
+        <li><a href="sample-issue.html">Sample issue</a></li>
+        <li><a href="proxypi.html">Research Stack</a></li></ul></div>
+      <div><h2>ProxyPi</h2><ul>
+        <li><a href="proxypi.html">Research Stack</a></li>
+        <li><a data-proxypi="pricingUrl" href="https://proxypi.co.uk/">ProxyPi plans</a></li>
+        <li><a data-proxypi="joinUrl" href="https://proxypi.co.uk/join">Earn £20/mo hosting a node</a></li></ul></div>
+      <div><h2>Legal</h2><ul>
         <li><a href="risk-disclosure.html">Risk disclosure</a></li>
         <li><a href="terms.html">Terms of service</a></li>
         <li><a href="privacy.html">Privacy notice</a></li>
-        <li><a data-contact-email href="mailto:hello@example.com">hello@example.com</a></li></ul></div>
+        <li><span data-contact-email>[contact email]</span></li></ul></div>
     </div>
-    <div class="footer-bottom"><span>&copy; <span data-year>2026</span> GrokGold. All rights reserved.</span><span>Made in the UK · Not financial advice</span></div>
+    <div class="footer-bottom"><span>&copy; <span data-year>2026</span> GrokGold. All rights reserved.</span><span>Research &amp; education only · Not investment advice</span></div>
   </div>
 </footer>
-<script src="js/config.js" defer></script>
+<script src="js/config.js"></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>
