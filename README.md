@@ -21,7 +21,6 @@ js/config.js          ← EDIT THIS: Stripe Payment Links, Firebase config, cont
 js/main.js            Nav, animations, pricing buttons, waitlist (Firebase or localStorage)
 assets/favicon.svg    Logo mark (the favicon is also inlined in each page)
 firestore.rules       Create-only Firestore rules for the waitlist
-.github/workflows/pages.yml  GitHub Pages deploy
 vercel.json           Optional Vercel headers / clean URLs
 robots.txt, sitemap.xml, .nojekyll
 ```
@@ -35,10 +34,54 @@ python3 -m http.server 8000
 
 ## Deploy: GitHub Pages (free)
 
-1. Repo → **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-2. Push to `main` (or run the *Deploy to GitHub Pages* workflow from the **Actions** tab).
-3. The site goes live at **https://conthegreat.github.io/grokgold-site/**.
-4. Optional custom domain: add it under Settings → Pages, create a `CNAME` DNS record pointing to `conthegreat.github.io`, then update the canonical/OG URLs in the HTML plus `robots.txt` and `sitemap.xml`.
+**Option A: deploy from branch (no workflow needed, recommended)**
+
+1. Open the repo and go to **Settings → Pages → Build and deployment**.
+2. Set **Source: Deploy from a branch**, **Branch: `main`**, **Folder: `/ (root)`**, then **Save**.
+3. After about a minute the site is live at **https://conthegreat.github.io/grokgold-site/**. `.nojekyll` is already in the repo, so files are served as-is.
+
+**Option B: GitHub Actions workflow (optional)**
+
+The bot that pushed this repo couldn't write to `.github/workflows/` because its token has no `workflow` permission. If you'd rather deploy with Actions, create `.github/workflows/pages.yml` in the GitHub web UI (Add file → Create new file) with this content, then set **Settings → Pages → Source: GitHub Actions**:
+
+```yaml
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+**Custom domain (optional):** add it under Settings → Pages and create a `CNAME` DNS record pointing to `conthegreat.github.io`. Then update the canonical/OG URLs in the HTML, plus `robots.txt` and `sitemap.xml`.
 
 ## Deploy: Vercel (free Hobby plan)
 
