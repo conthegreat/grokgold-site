@@ -1,14 +1,14 @@
 {
   "ok": true,
-  "fetched_utc": "2026-11-21T22:49:09Z",
+  "fetched_utc": "2026-11-22T02:54:11Z",
   "tone_label": "Headline tone",
   "tone_disclaimer": "Keyword reading of the headline only. Not a forecast, not a rating, and not a view from Gold Radar.",
   "overall": {
     "label": "neutral",
-    "bullish": 2,
-    "bearish": 11,
+    "bullish": 3,
+    "bearish": 10,
     "neutral": 17,
-    "net_score": -0.3,
+    "net_score": -0.233,
     "method": "Distinct bullish keywords minus distinct bearish keywords in each headline. This is headline tone, not a forecast."
   },
   "feeds": [
@@ -61,6 +61,56 @@
     }
   ],
   "items": [
+    {
+      "id": "51608388",
+      "title": "Modi credits his gold appeal for price crash; analysts cite global triggers",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNG1yNVNmMGJFeDZtWklfWHdPdUh1eFFtTFRFY1JLbFByR3JrSUxrQ2tiOHZiNmtKQ3lFTFEydUxteHFFVzBKZzhmcTBTdUZXWGp3NjhfNVhQS2gzWFJuSVphNzBydDZmb0c5V3prS2VIRi1mdVpIREVNT3BUel9wa19iSE1UX2xkdkFZQ2tMVUpwWko3WDNaYjd4aHJmUy1iTXRnSjdBQ1JjRVgzcVZSNUJyVFhiM3VnYlpVbjAwUQ?oc=5",
+      "source": "The Federal",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-22T02:52:58Z",
+      "summary": "",
+      "tone": "neutral",
+      "tone_score": 0,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": []
+      }
+    },
+    {
+      "id": "7fce2eaa",
+      "title": "Goldman Sachs: Gold's $600 Collapse — When the Safe Haven Becomes the Source of Cash - The Dark Side Of The Boom",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOMDRRUk1RWERXUTVJVDFmd3BhUkpwZjBKRnQyNEVQMW5BZC05enRpOFpnQUYtZDBYNnF3ckpsS3J0Tm4zQlVoUklseGpYTGZjS1FTTHprUUJ1Q0pQMFpEX3BLN2R1VDF6RE5sRmFjb1pubEcyZ3NqLVp2QWI0eEJWNnln?oc=5",
+      "source": "The Dark Side Of The Boom",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-21T23:01:55Z",
+      "summary": "Goldman Sachs: Gold's $600 Collapse — When the Safe Haven Becomes the Source of Cash The Dark Side Of The Boom",
+      "tone": "bullish",
+      "tone_score": 1,
+      "tone_hits": {
+        "bullish": [
+          "safe haven"
+        ],
+        "bearish": []
+      }
+    },
+    {
+      "id": "035d2e54",
+      "title": "Gold Price Today | Price of Gold Per Ounce | 24 Hour Spot Chart",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBnU2dTNUduLWh4WmxVQy1ndS1jN01abVlCeTNTMnFMbFdmS1d6TnFCekxTZVlXNGtKdnNRN3plT00yZm5LQmh6Rg?oc=5",
+      "source": "Kitco",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-21T21:56:47Z",
+      "summary": "",
+      "tone": "neutral",
+      "tone_score": 0,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": []
+      }
+    },
     {
       "id": "a254b01b",
       "title": "Tim Seymour Says \"This Is the Time to Buy Gold, Not Sell It\"",
@@ -237,22 +287,6 @@
       }
     },
     {
-      "id": "035d2e54",
-      "title": "Gold Price Today | Price of Gold Per Ounce | 24 Hour Spot Chart",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBnU2dTNUduLWh4WmxVQy1ndS1jN01abVlCeTNTMnFMbFdmS1d6TnFCekxTZVlXNGtKdnNRN3plT00yZm5LQmh6Rg?oc=5",
-      "source": "Kitco",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-21T15:58:11Z",
-      "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": []
-      }
-    },
-    {
       "id": "86622f27",
       "title": "Erdene Targets 70,000 Ounces of Gold in 2027 as Bayan Khundii Grade Rises",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOd3hoY2dZZS1SVlluc1dRNGM3WHlVbWlKa3JEbHdZQlVQejlvN3YtMnlMLWFBYnBmeHMxblNVdndGR3ZLOWQtVjNWdEdqYWJSaHVmSXdmTUxKN0NaLXhmYmgzeTdmTGx3M0djOG1wMkJRMDZnYnRSRlhXRVRFbDVYUTdCUU4tMk5mMXc3XzhvdS1oVUY5MWc1ejZXTW1kOHFiRHFEdnJRSlpteURJ?oc=5",
@@ -287,22 +321,6 @@
       }
     },
     {
-      "id": "cab1b574",
-      "title": "Gold Market Weekly ( Technicals) : Dare to Catch a Falling Knife? - The Dark Side Of The Boom",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOem9ENGxYNGRJeFpUMG02WnhlUktCVmZYNUxxckxOam4zcUlSMnZpZUZ1YjFzb2tGN1c1UzVtbk9iYk1KOHFHOTl6UVFTc1JiWUdFQVFmcnlrRFN0MmgwWGtSb2hIejREUGRFNE1nRXhfbXJEZEs4bUxvY0l4dDE3bVpDSWs?oc=5",
-      "source": "The Dark Side Of The Boom",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-21T13:31:09Z",
-      "summary": "Gold Market Weekly ( Technicals) : Dare to Catch a Falling Knife? The Dark Side Of The Boom",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": []
-      }
-    },
-    {
       "id": "3164cfed",
       "title": "Gold and Silver Lose $15 Trillion in Value as Rate Fears Batter Safe Havens",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE43dXZTYVJrM0pWOF9ieXFkS2NYNTVndHlodV9nOVpES1lLZ2VVY0V0REx3aS1UQWptVU9UbzFRMFlhRkxnWlFaeTNldU9QYlJDUkFybE1LY29TUTNmWEtsUm9OdVJ2aUNqNnJrb1lqdVhlUUpnZmc?oc=5",
@@ -329,7 +347,7 @@
       "source": "Jordan News",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-21T11:36:26Z",
+      "published_utc": "2026-11-21T11:35:04Z",
       "summary": "",
       "tone": "neutral",
       "tone_score": 0,
@@ -459,22 +477,6 @@
       }
     },
     {
-      "id": "10ed4235",
-      "title": "Gold, silver prices today, 21 November: Check retail rates of 24K, 22K, 18K gold, 999 silver in Delhi, Mumbai, Bangalore",
-      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxORkJTSEprdW9GQ1ljM0tEeGlpWVhvVW5lRjZGY0NnUWZUS2J2X1RQUkEzWEtMdk4zTk5Cd2FXQ2RRUmk0dzQ4S3dqQklhVkZWSzBaN0k0dDhRYzk1N1lNNnJjS1U0dXVjUzE5NERwY2RnakVlNGthTk9hb2ctdWpJcGRyYXZ3X25tblJCSERIVldNSDJjUy1Kby1MWWVjejh6QXpxVDFQUllRcHRvVVBJOTNnOVNuVnVsRTlJalAycnFmNWNIdTNJQnlpNUNKcTdqN1Y2czRPM19DUWx1QUJSSmY4aThoUUZ5NDRwdG1zSW16ajJHaUFHSWlNNzVKNGVT0gGGAkFVX3lxTE1tVDBFblVaemZNek91bVZjWEcweFhuY1NXV04yNjRwY1hWU01UaG9EbWJDSjdYLUU5WXFuRzhMMUpGTGZZQXpiSmZiU1RHZWsxUzlKNWt1dzhNU2s1al9Obl9kNlA2dHhKMFFWU2RQQUtDQWFCNTRNQ2FGSW5DdVY3SE1uWW10VGYxVkpxdHpMelRKLXlKRElyT3hobHRobDVlaGs3TjhxbzNsZ2pvczFfMUhJOXNhdXA3cTVybFEwdFBZYzBXSXVZV0E0MHJZaUhHSFRHSzdITnVaNkl6RXRYZkJKVkNSWWpYdFR3bFBOVk9uSkYxZVh3cUZ2YnljbE90UjJUaGc?oc=5",
-      "source": "Livemint",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-21T04:11:01Z",
-      "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": []
-      }
-    },
-    {
       "id": "e314840b",
       "title": "Spot Gold Plunges Nearly 9% in a Week, Losing $3,600 Handle; China's Gold Jewelry Prices Fall for Tenth Straight Day, Down More Than 650 Yuan This Year",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0wSl9TVmo0MmYxM1lpYTVDSWVlRnF5U19zcjZuTnB6Q2RwM2tHWmVVNVFxRVp6THBvdEdlejJQaWU2TjdFYXlkcDVsTmVVZmEydTc0XzZEcWZUdm5TS3N0S2d5MW1RNnhjVHNuQmUzMDBvT0Rrcnc?oc=5",
@@ -491,24 +493,6 @@
           "losing",
           "plunges",
           "plunges"
-        ]
-      }
-    },
-    {
-      "id": "c7a1d958",
-      "title": "Fed Rate-Hike Expectations and Stronger Dollar Send New York Gold Tumbling Nearly 5% in a Single Session, Breaking Below $3,550",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9MQ29qQ2syYzJKOS1GdkwzUU9Hd21PR2dNMVRvalhzZXdmakZWampYSWxvMnJBTFBrd3pnVUdyLUthWDBMZEQ0M2l2X2ZVMTBpazYwUVF1NVJqczhtUExzYkxkWmZUQzhfdzJYS0tCbTJ1UUhQakE?oc=5",
-      "source": "BigGo Finance",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-21T03:05:00Z",
-      "summary": "",
-      "tone": "bearish",
-      "tone_score": -1,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": [
-          "tumbling"
         ]
       }
     },
@@ -570,6 +554,22 @@
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
       "published_utc": "2026-11-21T00:01:39Z",
+      "summary": "",
+      "tone": "neutral",
+      "tone_score": 0,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": []
+      }
+    },
+    {
+      "id": "f782c22b",
+      "title": "Gold price fall nears $3,500 as miners face soaring costs",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYTBKNGdIMDJlUk1JZ3E1dm1pOEtVZmVuT3l5UmRYaHhXMVZVQXdCMlhDVmpYc0FwXzdydlBlMFZDeV9XS2lndUoyaFc1TE5DaXN6T09zTTJNSVgxZVRGbHdMS3dLZnJadlRLdlBDTzRwSlU4VUFwV09ZV2dLdk5LUHhzNHRNSjg?oc=5",
+      "source": "Mining.com",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-20T23:50:45Z",
       "summary": "",
       "tone": "neutral",
       "tone_score": 0,

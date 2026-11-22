@@ -1,16 +1,16 @@
 {
   "ok": true,
-  "symbol": "XAUUSD",
-  "instrument_label": "Gold spot price, US dollars per troy ounce",
-  "price": 3539,
+  "symbol": "GC=F",
+  "instrument_label": "COMEX gold futures front month (GC=F), because the spot sources did not respond. This is not the spot price.",
+  "price": 3515.4,
   "currency": "USD",
   "unit": "troy ounce",
-  "source": "api.gold-api.com",
-  "source_url": "https://api.gold-api.com/price/XAU",
-  "fallback_used": null,
-  "provider_time_utc": "2026-11-21T22:49:08Z",
-  "fetched_utc": "2026-11-21T22:49:09Z",
-  "display": "3,539.00",
+  "source": "Yahoo Finance GC=F",
+  "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?interval=15m&range=7d",
+  "fallback_used": "Yahoo Finance GC=F (COMEX futures proxy, not spot)",
+  "provider_time_utc": "2026-11-20T21:59:57Z",
+  "fetched_utc": "2026-11-22T02:54:11Z",
+  "display": "3,515.40",
   "change_24h_display": "-112.50 USD (-3.10%) in COMEX front-month futures (GC=F), not in the spot print",
   "change_24h": {
     "spot": null,
@@ -30,9 +30,16 @@
     {
       "source": "api.gold-api.com",
       "url": "https://api.gold-api.com/price/XAU",
-      "status": 200,
-      "ok": true,
-      "error": null
+      "status": 0,
+      "ok": false,
+      "error": "fetch failed"
+    },
+    {
+      "source": "goldprice.org",
+      "url": "https://data-asg.goldprice.org/dbXRates/USD",
+      "status": 403,
+      "ok": false,
+      "error": "HTTP 403"
     },
     {
       "source": "Yahoo Finance GC=F 15-minute chart",
