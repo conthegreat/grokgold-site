@@ -8,8 +8,8 @@
   "source": "api.gold-api.com",
   "source_url": "https://api.gold-api.com/price/XAU",
   "fallback_used": null,
-  "provider_time_utc": "2026-11-22T10:53:09Z",
-  "fetched_utc": "2026-11-22T10:53:19Z",
+  "provider_time_utc": "2026-11-22T18:19:40Z",
+  "fetched_utc": "2026-11-22T18:20:03Z",
   "display": "3,539.00",
   "change_24h_display": "-112.50 USD (-3.10%) in COMEX front-month futures (GC=F), not in the spot print",
   "change_24h": {
