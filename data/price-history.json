@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-22T02:54:11Z",
+  "updated_utc": "2026-11-22T10:53:19Z",
   "interval_minutes": 15,
   "retention_days": 7,
   "spot": {
@@ -13,6 +13,11 @@
       },
       {
         "t": "2026-11-21T22:45:00Z",
+        "price": 3539,
+        "source": "api.gold-api.com"
+      },
+      {
+        "t": "2026-11-22T10:45:00Z",
         "price": 3539,
         "source": "api.gold-api.com"
       }
@@ -1867,6 +1872,10 @@
       },
       {
         "t": "2026-11-20T21:45:00Z",
+        "price": 3515.4
+      },
+      {
+        "t": "2026-11-20T21:59:57Z",
         "price": 3515.4
       }
     ]
