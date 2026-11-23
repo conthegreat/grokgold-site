@@ -2,15 +2,15 @@
   "ok": true,
   "symbol": "XAUUSD",
   "instrument_label": "Gold spot price, US dollars per troy ounce",
-  "price": 3608.65,
+  "price": 3664.45,
   "currency": "USD",
   "unit": "troy ounce",
   "source": "api.gold-api.com",
   "source_url": "https://api.gold-api.com/price/XAU",
   "fallback_used": null,
-  "provider_time_utc": "2026-11-23T04:05:11Z",
-  "fetched_utc": "2026-11-23T04:05:18Z",
-  "display": "3,608.65",
+  "provider_time_utc": "2026-11-23T14:42:42Z",
+  "fetched_utc": "2026-11-23T14:42:41Z",
+  "display": "3,664.45",
   "change_24h_display": null,
   "change_24h": {
     "spot": null,
@@ -30,7 +30,7 @@
       "status": 200,
       "ok": true,
       "error": null,
-      "points": 482
+      "points": 501
     }
   ],
   "error": null
