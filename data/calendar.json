@@ -2,7 +2,7 @@
   "ok": true,
   "source": "Forex Factory weekly JSON",
   "source_url": "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
-  "fetched_utc": "2026-11-23T14:42:41Z",
+  "fetched_utc": "2026-11-24T01:55:45Z",
   "feed_includes_actual": false,
   "actuals_note": "This fetch did not include an actual field. Post-release alerts wait until a non-empty actual is present. Forecast and previous are the calendar vendor's published figures, not Gold Radar estimates.",
   "filter": "USD high-impact and USD medium-impact events, plus any event whose title mentions gold, XAU, bullion or precious metals.",
@@ -15,8 +15,8 @@
       "status": 200,
       "ok": true,
       "error": null,
-      "raw_events": 75,
-      "kept_events": 7
+      "raw_events": 74,
+      "kept_events": 6
     }
   ],
   "events": [
@@ -58,7 +58,7 @@
       "title": "CB Consumer Confidence",
       "country": "USD",
       "impact": "Medium",
-      "forecast": "92.1",
+      "forecast": "92.4",
       "previous": "91.7",
       "actual": "",
       "time_utc": "2026-11-24T15:00:00Z",
@@ -121,23 +121,6 @@
       "gold_title": false,
       "included_because": "USD high or medium impact",
       "why_gold_watchers_follow": "Activity and sentiment releases sit on many gold calendars because they can shift the public discussion of US rates and the dollar. Nothing here is a view on what gold will do next."
-    },
-    {
-      "title": "Unemployment Claims",
-      "country": "USD",
-      "impact": "Medium",
-      "forecast": "201K",
-      "previous": "203K",
-      "actual": "",
-      "time_utc": "2026-11-25T13:30:00Z",
-      "time_london": "2026-11-25T13:30:00+00:00",
-      "london_date": "2026-11-25",
-      "london_time": "13:30",
-      "london_offset": "+00:00",
-      "id": "USD|Unemployment Claims|2026-11-25T13:30:00Z",
-      "gold_title": false,
-      "included_because": "USD high or medium impact",
-      "why_gold_watchers_follow": "US labour data is widely watched because it feeds expectations for Federal Reserve policy, which gold commentary often discusses next to the dollar. Nothing here is a view on what gold will do next."
     }
   ]
 }
