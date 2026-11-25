@@ -1,14 +1,14 @@
 {
   "ok": true,
-  "fetched_utc": "2026-11-25T05:03:22Z",
+  "fetched_utc": "2026-11-25T15:38:07Z",
   "tone_label": "Headline tone",
   "tone_disclaimer": "Keyword reading of the headline only. Not a forecast, not a rating, and not a view from Gold Radar.",
   "overall": {
-    "label": "neutral",
-    "bullish": 0,
-    "bearish": 10,
-    "neutral": 20,
-    "net_score": -0.333,
+    "label": "bearish",
+    "bullish": 2,
+    "bearish": 16,
+    "neutral": 12,
+    "net_score": -0.467,
     "method": "Distinct bullish keywords minus distinct bearish keywords in each headline. This is headline tone, not a forecast."
   },
   "feeds": [
@@ -28,7 +28,7 @@
       "url": "https://www.investing.com/rss/news_11.rss",
       "status": 200,
       "ok": true,
-      "items": 2,
+      "items": 1,
       "error": null,
       "parsed": 10
     },
@@ -62,45 +62,133 @@
   ],
   "items": [
     {
-      "id": "e6ebd2cb",
-      "title": "Gold rates today Andhra Pradesh 25 November: Check price of 24K, 22K, 18K gold as yellow metal rates decline",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNdG1PbDNTSTFFXzlzT1NHVVBtanpQLWU0aHhWVFVWazZiTzJKRGozV0F5dzUxNVppdldzTEJyNEpDeWdObzhBR1BMZDkzX1plSG9rck5NSGZPUV8xZEZ3WlVwdGc2Q0ptU1dmQVBTM2pTQUFubGdnRmdITGxyeDBSM1M4c2FuMUFXR3M5RWVwSVBWZ0FYdlYyX3NOZUlmVE5HTVYtUkxtbDhzSzBydjU5cFhJTUx4NjdmWnhicUZFU0ViQ082NmQxMDRTNW1OU3VPOFQ2ZzFlQ2FfZ3FIa0FzR1pTVlBJYld2SlBLaw?oc=5",
+      "id": "149a8722",
+      "title": "Gold Falls Below $3,500 to Hit Nearly 15-Month Low: What Is Causing Gold Prices to Fall Again?",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOV19kUDREYUlJUFVvQlZUVEt5RzRzSnBUajRmblN3bm11b0s3ZGh6MExKSjE2SzJEZmNhSngwYjdFeGV1eTNqRzJnQ04zNHZVZlpMTXNSVDZjeTJOMmd0QWRJWG5rRkZBdXdoNHZud3lQU2hOdVJ4ZGdnRTk2SUZVZDc0bnV1OThvN2JuenZpd3gtMGRaQURlaVVNYmJfNk0zRFB6NHJCaXU3Z2NmekdpN3Z1UW9ncHdTR0dvSHdyVXQ3a2VCNk1HMWY0d1RYX2ZUejk4Vm5B?oc=5",
+      "source": "TradingKey",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T15:22:30Z",
+      "summary": "",
+      "tone": "bearish",
+      "tone_score": -1,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": [
+          "falls"
+        ]
+      }
+    },
+    {
+      "id": "8e4c9c48",
+      "title": "Gold price falls to session lows as U.S. New Home Sales rise 14.2% in October",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWHVyMnBTTVAzbTlGMVRVU091bHF2V25VMUtLWkxRR3gxSmtkV3lhLWJmclN1ekVUTklscnp5RTlvNnFyUGc3d2pnTTh1Q3pTMDVsZFRsanpFVHA3ekxZR2hKSWNsTThZVjZ5WnF5QjZuU0poaHB0Y0ktbkVHSkJ0QXdYN1NzakVuS2xCMlR6eHRLT3FLS3dTbGtDVl8wM1FIVHF0UnAydjNwY25YOWpB?oc=5",
+      "source": "Kitco",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T15:21:02Z",
+      "summary": "",
+      "tone": "bearish",
+      "tone_score": -1,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": [
+          "falls"
+        ]
+      }
+    },
+    {
+      "id": "5f38af0f",
+      "title": "Gold Sinks Below $3500 as Silver Crashes Thru' $40",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVGNVc1VUaDFFVGF1WFd4X2xGOVZaQzZvcVhiQW96X1VFNGp1eGo1cGVXaTBHemY2eEZKMTl5MDRaWFROck1GQldTRmtQUjBJNEhiU250TlVDVE1MT2d5VnVlc2dQWjVDVVdkUDZKdGVBSDFFeURhT21wMW5FcWlWLVNQVWE1UHd0UDNhckhlN2tLOWViTlE?oc=5",
+      "source": "BullionVault",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T15:06:42Z",
+      "summary": "",
+      "tone": "bearish",
+      "tone_score": -1,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": [
+          "sinks"
+        ]
+      }
+    },
+    {
+      "id": "090fb58b",
+      "title": "Current price of gold as of November 25, 2026",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9CNjFBRTRDNWxlTmlLR2h1WFRqYUpDYWNxWjZDX2tibUN4QVQ4TnQ3QlktUFFJWHgwckF2cTdjSG1VWGJhV09sY29ZNVZhYnpWdFozQTBpNndYT0YxQWVGSm0ycUlzNXNBbC1CNFdB?oc=5",
+      "source": "Fortune",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T15:04:00Z",
+      "summary": "",
+      "tone": "neutral",
+      "tone_score": 0,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": []
+      }
+    },
+    {
+      "id": "820f464d",
+      "title": "Nine dead, 18 trapped after illegal gold mine floods in Indonesia",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOW1Bb0tOT1B3Njg5eG5qQjEwRWZEbTVveW8wcFpucWxHVFIyNTNJN3VnU1hPWVBhd20zbHB0aTVlc1ZqVFNBZGFLR1Zqa3R5M3A2c1RUUnF2ZkNpMExWdWVTTGFIY0J6ZFVfdnc0ZWNCLTRSYWIyUTM5RTg2Rk1oblAtOXFGcHdLNHp5TDRoakpndw?oc=5",
+      "source": "Mining.com",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T14:56:48Z",
+      "summary": "",
+      "tone": "neutral",
+      "tone_score": 0,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": []
+      }
+    },
+    {
+      "id": "d3e8c82f",
+      "title": "Gold Price Prediction as XAU/USD Hits a 15-Month Low of $3,500 After US PCE Inflation Data",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1hNnJrdTN6T19ER0RiUmREbW4xUVVqVi0xT1VDSEotanFaUGpPd2lHa3ZacXhuZ01zNm9qdDdXS3J6NzBqNTB3THBhM0UyLW9sNm9mQ1J4Y3Nuc2M?oc=5",
+      "source": "Cryptonews.net",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T14:49:01Z",
+      "summary": "",
+      "tone": "neutral",
+      "tone_score": 0,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": []
+      }
+    },
+    {
+      "id": "2b445079",
+      "title": "Gold Price Today: Gold Falls 2.24% on November 25, 2026",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdkN3Vkc5ZGNYOVpyNnFWbjQxMENmU0tGSFZQX3gxc2ZfS2RJSF9rM3M0bUZiY3dKUVAtYWxBbnNzRlE2dzZvZUVfdVlqT3pGbW5xWTRsNWtIdmctOEN4dl83VWhvcENZUUFDRTJ5NW55ZVZTeTVCSkZxMFdGR2VBWXRyeDNSWmh4ZHFiSWNGV3U0Y0dTNG5STHBScU1YSkFHSEhF?oc=5",
+      "source": "USA Today",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T14:14:00Z",
+      "summary": "",
+      "tone": "bearish",
+      "tone_score": -1,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": [
+          "falls"
+        ]
+      }
+    },
+    {
+      "id": "442ad187",
+      "title": "Gold rate outlook for November 26: MCX gold drops 1.29%; will prices fall further or recover on Thursday?",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNNk84NmNwZGlVaVl5M1N2Q2pxY3lnTDVMQXpyWmZhNzRJdWVsVE1KWkQ4WFlZM0dneFcyd1lJbnRFNUJwZHduVkNmRFhOTUpVaC10a0JnX3dETEVfVkRfZEVqN0hwVHQxa0xsZkRYaE5PTGVLWGR2OXo2OXVSdjItNGZSNmhUa3BOS1hQRDRHeVR3S0p5SkdsRkVhalhZUkw2R1ZEaTBlTmVNQXZ6RFBYaGM1a25jSGloMkM4WnVsQ3k3em82d3pMaXdpT25GakluYXNkQXI3ZGZVZFpxUml2dzhvV3dpRGd2UHJ1QmlhLVlRS2JLS0FMVURuZXlRUdIBgwJBVV95cUxObGRqNlptQUxmYWpiNHY1M3hHMzFUZy1Jbkp3NTZvUmpKNURaM3R3V0FucTRSTGV0TlRhYlUtSWRWVDdOZmp3WTRFTzhOSU5oZG5YaFo3SEdCLVU3V1l2eHNlY3FLYmdvbmsxWjRwY3FPMnhCVDhuM3hmOFhHM3AzbC1vWUlFSTR2ZWxkRWxXNWE2akRhMGc5V3BqWHRwT3d2WUdwME1CdkdqNzU5VHdpMzh2bFhMVGNBdFRZUFQ5WVFwRXdYOWUyUWlIUUd5bWpPaC1EZWxZWFltcmFXblVTR1RJSWNZaUg2RkxtQ1VZbE1qNDhWbHRyRVVualFGSDQyWDVn?oc=5",
       "source": "Livemint",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T04:56:54Z",
-      "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": []
-      }
-    },
-    {
-      "id": "538795ba",
-      "title": "ValOre Metals Announces Definitive Agreement to Acquire Bemisa Água Azul Mineração S.A., Owner of the Água Azul Gold Project in Pará State, Brazil",
-      "url": "https://news.google.com/rss/articles/CBMipAJBVV95cUxNNmk0emtxeTFlTlpsVjc4c0xqYWFwZHVqdFFSdElfOHFuSC1tMy1LMm5KeEtzZVpQN3JpbHJCZnR4bTZXdU45c1dBWHoyYUVZenJXbTdESGRCY2Vkdl9zaDVwZXY4anI5T1dIN1hFTm9NOTlLZTZUcmszeUdpdENvWXdWc0dtNmxra3BSbnZXR19TTFl4ekFDTzhoVFczWFd2Q0MtTjIzZ25lNW1zVUxucVd5SFlGa1NpaGs2YTExRGVUNnZZd010QnpReFN4Vldkb2d0el8yS3h1R1JBYXpXM19kSDRMX0NFRVpVSlczRWlYa3VlaElLdzluRTRIOXQ5Qk0yLXlmdUhhdWE3Y0plVWx3UlI5aVNNaHJZRGRpN0dteVFE?oc=5",
-      "source": "markets.businessinsider.com",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T04:52:15Z",
-      "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": []
-      }
-    },
-    {
-      "id": "0ad0c03b",
-      "title": "Gold price drops by Tk 2,858 per bhori in local market",
-      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBFWmNCcTV0a1hrQkp3QjloQm04aWtrNlhkazZBVUZfU3hiSGdoOVU2blh1UmxIdHM3YjlpNG5RYU84Z0YyT2hqbXh3?oc=5",
-      "source": "Daily Observer",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T04:44:24Z",
+      "published_utc": "2026-11-25T14:01:00Z",
       "summary": "",
       "tone": "bearish",
       "tone_score": -1,
@@ -112,79 +200,50 @@
       }
     },
     {
-      "id": "f4ce44c5",
-      "title": "Gold price in India: Rates on November 25",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQzI3ZnlRZ3hYeGl0VFNMQzE5cjl6SDdHQ0dCQXk1R2FpYUo0MXJNcnFIaTFKeHU1MGVWN0NCTHlHZm5lb05tSDRWS2RlOVJ5YVV3TWhpVkJHR2tzZTFjUTNyMjFrWnFXSThvM0pyb3VVMDI5VDhCX25jOFpJV0IzeHlTOFhqYkZOYVA0eDMtSXpBWTR0VjBJVlYxZDRCSWlaRGozcjJoWUVuUQ?oc=5",
-      "source": "FXStreet",
+      "id": "be1cd53b",
+      "title": "Gold prices drop 1% as US Q3 GDP revised to 4.3% with contained PCE inflation",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSVp5clFMb2NHSUd4OXNuZXJCaGl2cUhES2t1SktVQTA0ZHpGaEtkSGF5Q1AwZnlOb0xxMzYwd3M2Y2tkZVo2dVhUWU9YOUVfMktNRTljVDJyTFhWbmZwMFNjLUNwUGZkaXRPSnd5Ukw2QUpTREx1aVV6YXNNa1liS3QxeEtlOVB2LUxaQUxKWndvV2VWaE00bFhJemNVM2xJNWVLWFNSRld4MHA3aFE?oc=5",
+      "source": "Kitco",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T04:35:34Z",
-      "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": []
-      }
-    },
-    {
-      "id": "10995791",
-      "title": "Gold prices gain",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQd3pQOGFBUzdCeFNZcXpfVFRDYzUxTFoyM1RwUlRvQlpkUkNMT1ZUOHBPM2staTluVXR3VE16RkR3ejVNZkxxcDlaMVh1SzlxdGlPRWk3THRJS3lvUnlYbUtUVi04S3V0bVpIN1dSc1d6ZlFZamZCLWJrSGVFX3NZMw?oc=5",
-      "source": "VnExpress International",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T04:24:52Z",
-      "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": []
-      }
-    },
-    {
-      "id": "80159399",
-      "title": "Gold and Silver Price Forecast: AI Selloff Puts Key Support at Risk",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaVJxdG9oSzBDS2piZDRFdkZQVmo2RWJ2d2kyc3F0aVJvWUg1U2xUdVc0LXJuMW1oaWV3ZGlzRHhZZDM0Y2RGbWRvYVN6RnY4b3FEOXFxdnVDcWtpUnpYbGkzclplZHI2RlBDT3FxcENoU0drcGU0QTE1T0Rpd2VzTUpCenRURjIyaFlaVGJWQTNMQUdkOExMc2ZBR1lUaXR0ekhBbmZPR1hXZTNNYjFsaFZIc0JfT29V?oc=5",
-      "source": "FXEmpire",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T04:19:33Z",
+      "published_utc": "2026-11-25T13:51:16Z",
       "summary": "",
       "tone": "bearish",
       "tone_score": -1,
       "tone_hits": {
         "bullish": [],
         "bearish": [
-          "selloff"
+          "drop"
         ]
       }
     },
     {
-      "id": "1485d71b",
-      "title": "Gold struggles near weekly low as Fed bets and geopolitics support USD ahead of US PCE",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPazJfN0xfN3BadFdDQ3M0U1lZYzRPbnV3aGdjUG5OdFZhTnJVcms4dlIxelpFX2ZCUFpoc0lLc1hsTU0talE3U2JnTTQwTzd0M3d6YVoyQjkwb290WlNLZzZSdkQwdkdaNkR3ZnNVNlZQSjhEVmNPVXh5SFJEYllkUUowVlduSnptd0hrYWJsTllmSl9hMGJ6TFRVZVB1Q19nN0UyRTlzZkxUb2dZQnA3RHFJOXVxekZ5ZmdjZHBiODdVUEp1b0FEMQ?oc=5",
-      "source": "FXStreet",
+      "id": "1efdb7e9",
+      "title": "SPDR Gold Shares (GLD) falls toward 52-week low as Fed rate hike bets rise",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ1pHY2RsZ0JPV3VxQTlBMzZsSzhDZDZPVnR1NzBKVEpvcDNhcTV6Mm5RWmVSZDV3eWc3LThDSm0zRm1pUExvQWRJMUt5SENkVzMtbm9BRFhrWmIydnRvcjI0YXdZOGwwQ0NaV1FweW1UZGxSR1kyMTBRcldQZjhQb1NUR2J0QmVXd2dESDJWRjZTbnNyX25RRmx5Z2EzYWNj?oc=5",
+      "source": "Beinsure",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T04:14:39Z",
+      "published_utc": "2026-11-25T13:48:32Z",
       "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
+      "tone": "bearish",
+      "tone_score": -2,
       "tone_hits": {
         "bullish": [],
-        "bearish": []
+        "bearish": [
+          "rate hike",
+          "falls"
+        ]
       }
     },
     {
-      "id": "2b01e8d0",
-      "title": "Gold Price Forecast: Will US PCE inflation data rescue XAU/USD buyers?",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOc2ZWdWZJQ3ZmNUdBVi1sWDBkSmc1OHhaaTc2MVdUVlFKX2R3Z3o4V19DSWV2Uk5ickhremxMMmxTNk41c3k1S2M0LVhSMWotQnV1ZTZsMi14QXl4V1ozWk81QS1RM0Jjb2NQQ0VybHVTQ2trTjcycWlwMklWclVuSFVWRlF2WFlaU1VLZXBZOXlKcHJ1RWZXUnJ2TmZpWnZFYVM4X0FscTVWdGg3MGg0Ym9IckhsQQ?oc=5",
-      "source": "FXStreet",
+      "id": "1bac85fb",
+      "title": "Gold Tests $3,550 as Tech Stocks Fall and Investors Turn Their Attention to US PCE",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVzJnSVZSM0x3T0YzcWl1QVV3ZHBTX0xMZWNrdEFRRlIyM094NXhlQmVRb0M1VDlxRmpIbDlrcjNzMVZiRzNPRGJfcWNTU1N1MnJmVkxjS3JxMnpoeTdXbEtjYXYxSi0xZGw4T2pweW5QS2VzU0puLWFSdWxrWGZId1c5R0k4andwMEV4YS12czlvOWJQU1lGVC1OYl9aZndDOGlSV09ZOW0zSFJFTXZiMUdzSjJDTmFmUjVoaHJ3N0hKUVU?oc=5",
+      "source": "Investing.com",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T04:11:49Z",
+      "published_utc": "2026-11-25T13:43:43Z",
       "summary": "",
       "tone": "neutral",
       "tone_score": 0,
@@ -194,111 +253,139 @@
       }
     },
     {
-      "id": "292e2046",
-      "title": "Gold, silver prices today 25 November, Wed: Latest 24K, 22K gold, 999 silver rates in Delhi, Mumbai, Kolkata and others",
-      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNVG1fRTNXQVRuRjVKbG1ZUHVnT3dWS1dXakpiTnBESGMyVnBhN0RGNXhpNW1RMnFsUmZia1FDNWxiZWFtN29YR2U4aEl5U2VQRTg4LXhST19xWnZZMnlYWlVzdHBzQ04zUU1XQjJtZHNJNUlUYUJJRXdvbGl6S0RvTHRSMWxYcDBlV2gtc1pXUUxQT0dmejZpWnI0MHZEY1BHcUFfT3k4dEI0Q3F6T241VW5ITmwtTFZqcWRMVEpJVkJsZ3RReHhkVktiMm1hbXVSSlIwX3k0aHdVMWFpbXlMTVlzUnhBVlZJbjkzZDNHMXZxTkhKNlpWV1B5d1JDakdQSVEyZS1aZFdSc2pZ0gGSAkFVX3lxTE54RVY4Y2VhU09ubWlEODVtenR2d3JfYmk2RWJYWVJ2bThxcmtpV3ZPTl81SWlTaHo3ZUVNeTk1b2gxS25YczB1emFTa3ZwR2NVMS1MdDNBMm5WcnVUb3k4bC1VTlprVHVZVnQtNGJ6QnVBTUdqaVp6amw4MWh3YWZ5SkdUNnRQNExTQUJFS21WaWNfd0VSME85ZXZMUzJYT2xEdnR6Q1h2OFRHNmE2MjFid0dqUl92VFBTdUNXVDVQTkdKRFJwOG56YnhpZkNfR1VuVllzZHdKajh0TGtlcnhKMmc4WXZIcl9kcW5LTGlXT3I0SXYyYVhhYm4xQkNXc3hiUGlwak1LZFRRSE9QUTZWOWc?oc=5",
-      "source": "Livemint",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T03:52:47Z",
-      "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": []
-      }
-    },
-    {
-      "id": "dd0bdfc3",
-      "title": "Gold holds near 15-mth lows on Fed hike bets; PCE inflation awaited",
-      "url": "https://www.investing.com/news/commodities-news/gold-holds-near-15mth-lows-on-fed-hike-bets-pce-inflation-awaited-5049591",
-      "source": "Investing.com commodities",
-      "feed_id": "investing-commodities",
-      "feed_name": "Investing.com commodities",
-      "published_utc": "2026-11-25T02:58:14Z",
-      "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": []
-      }
-    },
-    {
-      "id": "efa63041",
-      "title": "Gold Near 3500 as Copper Tests Another Critical Fibonacci Support",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOZk5meldkRXNKY25feFVBV2dxejFWMzczUXY0YnF4VzFybnpMbUZLbUVFZmFXSy1URU5mTVlvb092Y3lDYmxCU1FFVTJVLUFHS01hcmprQnozUzNEeG1sSjEzYUdCOEJmWGRleFdyVG9lRldNbERseG9XcW1kRy1zaEFqRmt0d09xMTR3amRMQ1pQODNpT3dOdlkzZ0ZXbGVfSHdFSW9WcFJtZi02czdaMUQ1NXBDYms?oc=5",
+      "id": "2b6c210b",
+      "title": "PCE Inflation Rises to 3.8% as Stocks, Gold and Silver Weaken",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPdmlzQWFUTkt4SXk0RTNNSzdudnc0X0stelRZTVhSZ0Y0SFRpLVJDU1h4TUJuOHpDWVYySUx0ZzhxWi1ITHFEdXpfRjk5c09UaXpySXhDT3ljT2g1SXU2RGtsb2pFblVJOVpFNENHNUFiekFURFpic0RmRUJCREltcUsxM1Jtcmp6eWpTVzJQaDBxM1pReDdtUFZ4UnBvQ1ZYUXlhcTlBaHlxd3BfV2lZ?oc=5",
       "source": "FXEmpire",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T02:55:46Z",
+      "published_utc": "2026-11-25T13:41:22Z",
       "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
+      "tone": "bullish",
+      "tone_score": 1,
       "tone_hits": {
-        "bullish": [],
+        "bullish": [
+          "rises"
+        ],
         "bearish": []
       }
     },
     {
-      "id": "6c9174cd",
-      "title": "Gold (XAUUSD), Silver, Platinum Forecasts – Gold Retreats Below $3600",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZVp5Y2UzOUNNYXh6VUdOQzRSNW5HMm5SWEZ2NUdJQ1J6U3d6OGRPSDhZQjB0V2dZcFgtMVF5c3R5aGlnYWkwNEJGVl9LZWd0aUJhblhiWG5jSjVUVGhHSmV6djZMd1lKMUptSXlNS3lKMnZSWVZFcXhaN3o4ZDVCQ0pXcVdYdmMwMkk3RmhuRlM1ampEclNCS0JjVDFuVFh4MVlwc3dVVVpncXVNSkpBMVh5OA?oc=5",
+      "id": "0475ebe8",
+      "title": "Gold Price Forecast: Rallies Remain Vulnerable Despite Falling Yields",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQT0phQWhhb3lzbHhaOUhJaU0yMTVodkxnN3hpNU9UY1ltMFhsSXpMRUVUZm1Ua1pGLWZyb3h0bjl2ZnVNYUQ5THozUlU3YTlId2psaTc0UW41dHRWdkd5NHBBaFBzQ2g0Rnh4dVdkZk5CYkhkV0NrZDJ2X2RoUVZra05GYUhCaDdpaUk4Smt4MW8tNlBJYk5fSURGcVhRNGw3TWVVcHJ1aWxGYldxd2xucXN6Q0loQXlYcWs0?oc=5",
       "source": "FXEmpire",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T01:47:00Z",
+      "published_utc": "2026-11-25T13:33:19Z",
+      "summary": "",
+      "tone": "bullish",
+      "tone_score": 1,
+      "tone_hits": {
+        "bullish": [
+          "rallies"
+        ],
+        "bearish": []
+      }
+    },
+    {
+      "id": "4d778262",
+      "title": "Barrick Mining Corporation (TSX:ABX) Stock Declines 1.62%: Gold Price Volatility and Global Mining Risks Weigh on Investor Sentiment",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNUk1mdEJhOWZEbDltV1lsYWk3Skd2azhqREM1WUtyMGJsVHVQU1ctdWJ6Z3VBOWdEOUNuYzBpYmhNWXBrLTBNT0RDQ0lsYi1kUmY0Z2hVU252VE9vNmx6bF9lRnZfejhCR1p1cWZVWTltdmR6MXMtc091bXJ1M1UwS2hpRkw2VHc3anpjWUczWmJoRDgtMmRncVBCVWc5ZDhkbDFvREd5NGZVMEsxcmVYaHFWRXhJSU5CTlgyYVF1UkwwQUVBVWVBd2x4dWE2bUwyOHhfUEkwd2ZRb0Ezc1lxR05qdERyMkQzNERKWUdB?oc=5",
+      "source": "kalkine.ca",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T13:33:00Z",
       "summary": "",
       "tone": "bearish",
       "tone_score": -1,
       "tone_hits": {
         "bullish": [],
         "bearish": [
-          "retreats"
+          "declines"
         ]
       }
     },
     {
-      "id": "16afb9fc",
-      "title": "Gold Extends Losses on US Tariff-Hike Push, Fed Tightening Fears; $3,500 Support in Focus",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9uelJpVWVPUVBmemhVWFJoVU1QMlhqQ2g3eHVScGI4QzdWbHdDNlE0V2k5UE1IUGl6eXc3LXloUjVxUnFGTWVLaWU3M3RkekZseWl4Wg?oc=5",
-      "source": "bloomingbit",
+      "id": "59152028",
+      "title": "DPM Metals Inc. (TSX:DPM) Stock Declines 2.20%: Gold Price Volatility and Mineral Development Risks Weigh on Investor Sentiment",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNSG1SOEZFMGxHMFBpRTRIcWtCRVNiMmVKRnVjZ1J1Z2hPZDBqWTJMSFpSMnpwTU1wT2M2M1ZLZkx0QjJoVjVfYnUtb1JfU3F5NktJeDVQUTNDQ01NSXlTbXZyS3dSSXpldVBlc3pVNXRQbnVhY1h0NUtudndrcno0LVNVYVRaRU1xQVBUcC1HT2NTN1Zscjd5Y25BRGFkRkZFZHU3TTNETWNneTZJejA3TE91b2tVY1NzZ0JWSWFLNWVmNi1xQmlsSm5LY3lrMm5qLU9GanVFNEdFVzVWSU4tVEt4VW5lUQ?oc=5",
+      "source": "kalkine.ca",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T01:37:52Z",
+      "published_utc": "2026-11-25T13:33:00Z",
       "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
+      "tone": "bearish",
+      "tone_score": -1,
       "tone_hits": {
         "bullish": [],
-        "bearish": []
+        "bearish": [
+          "declines"
+        ]
       }
     },
     {
-      "id": "7607fdf4",
-      "title": "Gold prices ease as traders await U.S. inflation data, weigh Fed rate outlook",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNYkZUd01nbERObzhxMDlpVDF1ZmI1UjlwMFpHRXgwcWlhY0ZQVWVVdVY4WnFWQl9RYXg4Ujd0X3o2ZC1iZ1RnMWVDNXh3UlRlQzl0bW5hUXJRX2x4S0ZhcXZaYVdEZlBfTVBFZm1lcXotcFFfbDA1WE16dC1WbkJ3aFpDZGhhdGtPNThuNGluT2p6dEZh?oc=5",
-      "source": "Traders Union",
+      "id": "e0008dfb",
+      "title": "IAMGOLD Corporation (TSX:IMG) Stock Declines 2.07%: Production Costs and Gold Market Volatility Weigh on Investor Sentiment",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOTTFiSWhoUXJobXBwMkI0NHNhTmZoYl9lelpjem4xWFlaeUJXMjkzaDRHWVpNczVPTWpLSi1oamVLN1d6UWtmbUxCdEpsV2p0V3J4Z054M0R0R0V2dklWckZjYVhaOHBLMmptUlNLNEhxb2JiM2hRa3FtZXZCS1NnRVlZdy1DVXNhQmZCTENVZVVrekpHRzNKcU9SY2ZWTUgzVGZDSGVabVUxbWdlb1JNU05UTUVtZnBqV29ycnIwLVpxOHdhYmdTZWU1X2lCU05kS3JtZXlpMjUxSllieGhDcmln?oc=5",
+      "source": "kalkine.ca",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T01:09:28Z",
+      "published_utc": "2026-11-25T13:33:00Z",
       "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
+      "tone": "bearish",
+      "tone_score": -1,
       "tone_hits": {
         "bullish": [],
-        "bearish": []
+        "bearish": [
+          "declines"
+        ]
       }
     },
     {
-      "id": "3637379a",
-      "title": "Gold Falls To Near $3,550 Ahead Of US PCE Inflation Data - TalkMarkets",
-      "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE9BSVRIdUpFV3RadXpXeDNHaU5WYS0xbHQ1c1FYUzYxa202dE9LX0NDUjB5bnRDX3ljOEdz?oc=5",
-      "source": "Howl.Link",
+      "id": "20066f78",
+      "title": "Alamos Gold Inc. (TSX:AGI) Stock Declines 3.81%: Gold Price Sensitivity and Development Expenditure Raise Downside Concerns",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQSDBYVGtpVFJ4SzluRXlPRkRsUE1GSXdwSUJnTFpCMUZublJDaUx5b0MtS254X3VFSHdQUDJWMFp3Q1hDNm5ZaEFjQTF5VkhRcmx3MTRLbWNyNnBjLW1ZMi04X0VQRWVxWnB5czFKTkd6SHVKcGxIUlpDdmtTcTZSbjRaUUtaOWt3MVVyNVp6d2hveElVOGVfQnM3bDRTTVBRM0dCSVU4a1hXMmxQaEJ3WFBEeUNIemhBdzBwNEdnSVJpeWFsZjBXa3p6R244REhUbkYwWWJqdUhUS1RHaVJNMA?oc=5",
+      "source": "kalkine.ca",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T00:50:00Z",
+      "published_utc": "2026-11-25T13:32:00Z",
+      "summary": "",
+      "tone": "bearish",
+      "tone_score": -1,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": [
+          "declines"
+        ]
+      }
+    },
+    {
+      "id": "746fce1f",
+      "title": "Kinross Gold Corporation (TSX:K) Stock Declines 3.01%: Gold Price Sensitivity and Mining Expenditure Raise Downside Concerns",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOSU5mZ3ZrN3doVVdGMjZRc0J5a01LQnh2bnZrNmpnaENMbHc3NXk0aWtMNDB1dWtKY1FBTjZVR1NVM1QzQ1FveENyOHpSQzFlNHNwM3VsQUMyZDRseGFyNG9XTUdrVDh3dmtlVWFXVE12dXdNM01FUEIwZnVVUDIzd29iZVZhVEplSGw2QmJlQnNOenZkdzJRcUtaX01IMGJ1aG9FVXZvM2xtcG5qNVJpUDZoaGFEZUtocXlrNGROY3VCalVjODhYRWVXck5aZ1Zvd2xSMG9yZDRfdm9VaHlVYnFMdw?oc=5",
+      "source": "kalkine.ca",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T13:32:00Z",
+      "summary": "",
+      "tone": "bearish",
+      "tone_score": -1,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": [
+          "declines"
+        ]
+      }
+    },
+    {
+      "id": "f8410664",
+      "title": "Gold price falls to $3,496/oz after U.S. durable goods rise 0.2% in October",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWmtTc2VWTGRZcEpmNW1iNGxBaVVoRE43X3JldG5BaUNLSGZ1UWhnYzQxcDhhdFZXTFRaWUJWNk91bjRSYXhiSWNQeFAxRmFta2duN3Y1elNoVTEyUm9kdG1Ha3N2SEpPLVB6X2JtWnhaNjR1MTVOUnFVLUJ1UDNKNVFMTDRjM2VvajU1UGhFZDZ5R0pwZU9YWXdWM0FmdVBVT2JpNG9GeUszdVA2?oc=5",
+      "source": "Kitco",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T13:16:39Z",
       "summary": "",
       "tone": "bearish",
       "tone_score": -1,
@@ -310,13 +397,13 @@
       }
     },
     {
-      "id": "40870b21",
-      "title": "Gold holds steady ahead of US inflation data",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOV1p3ZkduX2FrdGJhMEMtbmNXNTgxN05HeDFsX2xxNDBkWXZQVkFWS3NzNFpITzZ2RnRyYXVZQ1k5bmthekYzdG9aSDVxcGZGS1RxMnNTTHNRRkQyQWFoWm1zNXVfd2hVQW96VHQ1ZFd4eU04cXNTRWk0cFJ4LS1PLUd1eUFmN3Y4ZjJQbXZpVkd3UQ?oc=5",
-      "source": "Reuters",
+      "id": "0a48ffb1",
+      "title": "Gold price approaches $3,500/oz after U.S. weekly jobless claims fall to 189k",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPT3k0Y2VxSndjQ0owaEtJdmc1MlBTTVlvaDlKOFQxYzNxVVc5X1REbHNDRW5TTTJPTmR6MHdMWnZGOTlGOWJVUUc5UGpPRGFld3BzMU43MDBWemRNNEpqdk83bFBVMVdPUXFlV1pxa2JsbjZraDNfQ1ZnX2dLaVJJdmV4U3NiOXcwbk5TMEp0dmw1RWU3LVVUMVk0d3JnbVAzSWhLNk10d3luRE9udENzX2dTNDRCZw?oc=5",
+      "source": "Kitco",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T00:49:00Z",
+      "published_utc": "2026-11-25T13:16:36Z",
       "summary": "",
       "tone": "neutral",
       "tone_score": 0,
@@ -326,21 +413,104 @@
       }
     },
     {
-      "id": "601cc345",
-      "title": "Gold falls 2% on 24 Nov as traders price in Fed rate rise",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8zR01tX05jNV96UWhQcWdDTWhlYURHaUdqWEhFeHRadzB1M1lKM3JtSUtwUHRQZnREUnZuWkhVMVJpUzR6REFsX2M3Q2ZGMF92eFFnaFhqaTRuTy1xN2FQMXhLUk9OODc3NjlvWE5FUjFnVkJsdFE?oc=5",
-      "source": "Nation Thailand",
+      "id": "4e77becf",
+      "title": "Why Is Gold Falling Today? Gold Drops Below $3,500 for First Time Since 2025",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSV9fS1FPWHRva1lTSEtpRXZVUXV0WDBjLUFMN3ZVRHN3eVJSbzAyZlJwNnZDNms1azh1Qkl6TTJoV3Q4NlM1R3VsYnd6U0F0ODB2dzJFcmVJNlNDOEdkdEhyOGs1M3NRdHFaUHNGWXVHRWJEWThnWGVER2VEQkRjQVd5VWI4OEZ4QVVtU0R0MmlrdUFYVFBfRDN5MHhmekhKdm5CQ2NPdmEtdHBBcHc?oc=5",
+      "source": "Around Prague",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T00:21:00Z",
+      "published_utc": "2026-11-25T13:15:29Z",
       "summary": "",
       "tone": "bearish",
       "tone_score": -1,
       "tone_hits": {
         "bullish": [],
         "bearish": [
-          "falls"
+          "drops"
         ]
+      }
+    },
+    {
+      "id": "4fdf141b",
+      "title": "Gold ETFs Bleed $2.15 Billion in a Week, the Biggest Exit Since June",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5UcmFQeUNfTjZ1bi1JTkdQek5ENVlOTHRIR3U4cUJnR2VERjBfOUZlX2dRZGtkVUFMNmVSQThENVZwaVNydFc0MDBVcTJjSldOUG1hbm52d3hZTlhhUEhsTFpKcEZ2WXNBLWpHZmRxb3JDTFhyd0E?oc=5",
+      "source": "BigGo Finance",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T13:07:17Z",
+      "summary": "",
+      "tone": "neutral",
+      "tone_score": 0,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": []
+      }
+    },
+    {
+      "id": "93117aef",
+      "title": "Why Is Gold Falling Today? Gold Drops Below $3,500 as Dollar Strengthens",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTHkyeGVlT3dUVVJXSnJWVzdZSGNiRmRIcG1BbF9jS0pqMXdqQWk0bXZfQ2dpVllabXZPaElCYVBkMDI2Y2t6VzNkX0xnUU5rODhydVJsVGhnMDduWmlrMlVBdmJhSURXTkZGekwyM0lNbW1nN1BqbEV6LWs5N01kUF9LTnFWWFBMa1VBMHpfQ0YxazhVcWxCNk5oa3lrT0E?oc=5",
+      "source": "Coinpaper",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T12:39:54Z",
+      "summary": "",
+      "tone": "bearish",
+      "tone_score": -2,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": [
+          "dollar strengthens",
+          "drops"
+        ]
+      }
+    },
+    {
+      "id": "1803169c",
+      "title": "Artemis Gold Inc. (TSXV:ARTG) Dips Modestly After a Quarter of Solid Earnings Scale and a Heavy Expansion Spending Calendar",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQQkpuTEVZc2dvcW5uTURNRGR6amM1QkNNY2ZhRWpjUUtucnNhd0dHTWRYT2xVTzRBdnlHUVN4MlFuem8yVVpGM2RSdGwtbUQ3OFVKVkpSTGNhT3Bac3pkSU9ENDlWU05oR01TNHJYODhYNnFFbGJMQXJ4WmhiVWtkS3Btbk5sTWxSMUptOUF2M2VjOHFVQXdtZVFhTjlRaVNiWG8zTXJPRDMwbUl4c1BsSEFRVUo1S0REcXhaOVAwNDh1MWI3OUtHMFBaeGU4NGdMQ2V5ZlBRc0c5QWoyQXgxSGNKU3M?oc=5",
+      "source": "kalkine.ca",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T12:28:00Z",
+      "summary": "",
+      "tone": "neutral",
+      "tone_score": 0,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": []
+      }
+    },
+    {
+      "id": "98f348aa",
+      "title": "West Red Lake Gold Targets 47,000 Ounces in 2027, Rowan Builds to Lift Production",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNX0s3bXZzZC1CODVyelNVRkFCVVVnWm44UTBGbXhqS09vOE93OHBuTFJBNUtfOTNpSEtnQmEydDlYSnoxT3dvSVZWQ0huSENhYXdMTHo2RFFvaDRiY2Z3VF95bWstMWNxbUg4QU1WWFU1RHdnOWhTb3hZLVpjUUR1bDc1bTBDTW52ZDBBREJMSS1xcVBudGh4ZTdWVVhNMmdhRFAwUTFmT0w1X1JwSVh0Q3pUUWNPQQ?oc=5",
+      "source": "Crux Investor",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T12:19:27Z",
+      "summary": "",
+      "tone": "neutral",
+      "tone_score": 0,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": []
+      }
+    },
+    {
+      "id": "d173e733",
+      "title": "Gold price today, Wednesday, November 25, 2026: Gold prices fall as inflation data and potential new tariffs loom",
+      "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPb3dFeUN5SkJCNHNoN2FGTDYzdHNOcXJtS0NVRlBDWUJtOFNiMndWMXBHNHJ0SHFRbm1ORkdDTUtBVEQ4ZUJlRC1QeU5xZ2VPVHVNTVNMa3E2SHpheU5XSGY0YVJEcS1OSmpKM21nTGx4QS1zVUxKWHVNeFd4Wko5NUltTHNTQTU2am1tRjZkX3dGTUttQ09DcUJaYmloUXExakZRUnFCVURWUy1sbENFdXFubllDSXVvZVgtVk5WejVKQzVZY1Nvbkx5N2hxNzhhelVheFlVTUFzNkJhMV9ISm9sR3cxanB0RXhlRGVyNmswd09EOXZuVU5kR3hJVXV4Vk9Wal9ReWY4M29mTGR1bHdhbw?oc=5",
+      "source": "Yahoo Finance",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T12:15:48Z",
+      "summary": "",
+      "tone": "neutral",
+      "tone_score": 0,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": []
       }
     },
     {
@@ -350,7 +520,7 @@
       "source": "Kotak Neo",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-25T00:15:08Z",
+      "published_utc": "2026-11-25T12:00:55Z",
       "summary": "",
       "tone": "neutral",
       "tone_score": 0,
@@ -360,113 +530,13 @@
       }
     },
     {
-      "id": "54aab91f",
-      "title": "Gold Trading Alert: Gold Prices Plunge 2%! Fed’s Hawkish Stance Shatters Bullish Defenses; Focus on US PCE Data",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQM3h6NjJscnZwYUhkSEJPVFVweTl4R2thNHFURnE4dWtIWUZfSnhlTFZVMmZHRVdFYl9jSzBjWmJHNGlfdGp6emh0cGhRSjdHV2t1MzFrcDJxY0hKMmtIcEdmdS12WU05MHVZeFNIVE8xUjR2MWZmWUs4STEtODBIWF96RGg5X2RlQWw1al85cHctSm55Xy12dFM3UU9LUQ?oc=5",
-      "source": "Moomoo",
+      "id": "c9d565ca",
+      "title": "Gold Price Analysis as $3,500 Support Shapes the Next Market Move",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbEFEcmhHSkJYOURUX2NVaUhNQUNpME9WNzVwcFJ6Tzd1UXhPNFMzYUpKRjQtc0ZGU29ENDZqc2YyWlE5QkZLRjBMUG5scm12WWFxdTg4UUc5b1NNT3pudFpCanJFRHYyS3k4N1REQTJ0MlIwaUluUDZ1ZFU5MnhqM0pXUTZkYTRDcTk3ZkV3Vy1IeGpuYmRTdDVtcVg4Zw?oc=5",
+      "source": "Brave New Coin",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-24T23:40:20Z",
-      "summary": "",
-      "tone": "bearish",
-      "tone_score": -1,
-      "tone_hits": {
-        "bullish": [
-          "bullish"
-        ],
-        "bearish": [
-          "plunge",
-          "hawkish"
-        ]
-      }
-    },
-    {
-      "id": "16c439a3",
-      "title": "Gold slips after sharp rebound with inflation, Fed expectations in focus",
-      "url": "https://www.investing.com/news/commodities-news/gold-extends-rebound-as-nvidia-ceo-news-lifts-equities-dipbuying-lifts-bullion-5046835",
-      "source": "Investing.com commodities",
-      "feed_id": "investing-commodities",
-      "feed_name": "Investing.com commodities",
-      "published_utc": "2026-11-24T22:22:45Z",
-      "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [
-          "rebound"
-        ],
-        "bearish": [
-          "slips"
-        ]
-      }
-    },
-    {
-      "id": "4456e47a",
-      "title": "Gold’s selloff is sowing the seeds of its next rally – Theo’s Iggy Ioppe",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaU9yVzNUcmVFZklrRGdlVTV1c2pjVDEyU0s3Zkd2ZmdwN0UyMDJIdllyQjZKZ3hwaU5lalkwcDlTV053YUVwWlRHUHM4d3RYTEdBVzl0LUEwMXVGQ2c3aEs4SlNKUGJGVEpFU1pETXA1V2lfX2VhSVQzcUVaU1RUNW55dWVpaUgtc0hJNTNob29WbFF3ZXN4TGdzTlFZQjJkRkNEYU5FYw?oc=5",
-      "source": "Kitco",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-24T21:59:13Z",
-      "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [
-          "rally"
-        ],
-        "bearish": [
-          "selloff"
-        ]
-      }
-    },
-    {
-      "id": "6e3c4720",
-      "title": "Stock Market Today, November 24, 2026: Nasdaq Falls as Nvidia and Anthropic Slide, Oil price at $89, Gold Drops to $3,620",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQM1ljM2NfLXUwSENYazc2cERKNkFvM3FuRkF5aGd3dnRRZFB6d1FnVnZlMlZMem1ScmNWWDV6X2ZuclZCSm92WDAtVlZFLWxMWDItS2NzendFVGQzN3VobEhhU1dZeXRFNjFXWEVRdTJ5c1d0WFpxcUdvcURia1RwSlBxX1NjV29GZ04yT1RNdExOLVJERmZWdXRtSWF4NDhxQk9mOGhTRk9HOHN1Zmd6QktFcVB1N0FhTFplQ21Oal83ODFNYTJKNmtxNEVuNFZwRDVQSnlIYzBBOElrOW5ldFg1aEFhVER2SlVKZ09n?oc=5",
-      "source": "Eurasia Business News",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-24T21:25:29Z",
-      "summary": "",
-      "tone": "bearish",
-      "tone_score": -3,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": [
-          "falls",
-          "drops",
-          "slide"
-        ]
-      }
-    },
-    {
-      "id": "1006c591",
-      "title": "Gold price falls 2% on hawkish Fed bets, US inflation data in focus",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQeFhNU3Z6SGt5cklJWjR2Y1RERTFHdGRmVERBVW9HOV83aGhCQ1NrU0V2Z2ZjWXVGNkNhNW9ldVMyMmNzWWFWODZkd252Tzc2LVZlR05vNktLNFdTNDdFSE1kMnNVSTRwMW9ENkJneXp2dGxNTUlra1JTSHR2TVFyem9wVmFlXzJlakRSeU5oWTNlY3dpdk9XMg?oc=5",
-      "source": "Mining.com",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-24T21:04:34Z",
-      "summary": "",
-      "tone": "bearish",
-      "tone_score": -2,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": [
-          "falls",
-          "hawkish"
-        ]
-      }
-    },
-    {
-      "id": "38154b5b",
-      "title": "Can AI Gold Mining Increase Gold Supply?",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZzNGTTJnblJuUVVqeVdrWHdBZ1BmbDJXdFpUU3BmbmdrXy01c0RweE50NFdaTW5mNVhDY0tCeW1EVHJLRXpTSk00eGNBWVpicDlRQjNXc3QtZjlzczNXejNuWmhDUU1Gd2ljNXdSR181NUgySTExdW9LVGRmODZ4T1Fn?oc=5",
-      "source": "GoldSilver",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-24T20:43:11Z",
+      "published_utc": "2026-11-25T12:00:17Z",
       "summary": "",
       "tone": "neutral",
       "tone_score": 0,
@@ -476,104 +546,37 @@
       }
     },
     {
-      "id": "d82c2ca4",
-      "title": "Gold Analysis: Is the XAU/USD Recovery Running Out of Steam?",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRUo4UnluY1MwZXFwemhvM1ctdGJTZ0xrSFhuTlFsSEpEOEM5dVFjWWd6MXFiUnhtdV9KYzhCakE4TEowbHhaaGU4elJSWnhNaVhDVU9HMEhzTUJYLWpkZWRCbDdQMV8tWmR2cFBTQ3BfSmxwQ1puSVV2UjV0blAxbHMwb3dFM3FzaGpKNk9nWW95eGhTN0c3dVFpT19xcVlkR2JDMUxhUUs?oc=5",
-      "source": "FOREX.com",
+      "id": "40e5fa2e",
+      "title": "Why Helius Minerals (TSXV:HHH) Eased on the TSX Venture Exchange as the Gold Price Dropped by More Than US$100 an Ounce (24 Nov 2026)",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNYnljNlRLVVkyVHEwY01INGctei1ySGNGakNPMjhMWFFuXzkxRlJLVjV5NFpyV2VUeHowT0F4MGVrZnFoSHVkdVd1WVp6RFIxUXpNRFN5d3Z6WFN2Sm9ZdmhwNWx4ZGhMaUxXVFVxVjFBcDhrdmdBd3VreHh3Vy1rQ3JoWXk4U3NEXzdadDhhT2xydzRrMzIxM1hkeFFUWHFVXzBmSWVTWWxfMkRrbC1rSjQwVFBHbGNDYkJpLUJIcW1xNHl0dHJFZzRpdENEZ1R6N1NRNDhpcGFIQ293R0tJNUlDUUtnNDE1Q1ZXMnB6QQ?oc=5",
+      "source": "kalkine.ca",
       "feed_id": "google-news-gold",
       "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-24T20:13:45Z",
-      "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": []
-      }
-    },
-    {
-      "id": "ac71cf2a",
-      "title": "Gold Price Down to USD 3,566.45/Ounce",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxObE5ZTnh1bDZSOVRpRHM3UGZoQmRhbkhabUpTZDBzdEtIekFOTkFTYnZfbzRHaFpKYkV5cUF0RW5XZ0tfdVNlNFdPM195UEZVLW1BS3M4eE41UkctZ3RPSlZITXpCczNEamlpVk1ZcTUydDkwMC1WYmI4Z3k2UnhVR0twWHBhVTFYNWc?oc=5",
-      "source": "Qatar news agency",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-24T19:46:56Z",
-      "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": []
-      }
-    },
-    {
-      "id": "3f0b0665",
-      "title": "Royal Gold at Renmark virtual non-deal roadshow: growth and discipline",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQc1gxLXNXdVQ0Y1ZLOXZaZ3lGYVhlMm4xdUZYdjBXWTBrbUMxM0M5ZzBZY2VEZ1Y2UkpMekJNZ2dsVEIyVVluU0I2bGpnZnd0NU5SU0dIa25vekQ3d3BmX24zLWlUMlI3cl9ldzFHNDRqLXZXTFZPS2FiMEhkSDNrLWdNVGU2VXltUXZxaGNUS1VaeVJxZFRYdElXbzFwRzJ1UTA4QnRmRGlaRmoyRXZScURWTlVyLWloczVZdF85R1dGdw?oc=5",
-      "source": "Investing.com",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-24T19:09:52Z",
-      "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": []
-      }
-    },
-    {
-      "id": "b46189d2",
-      "title": "Gold and silver lose over $800 billion in two hours as Bitcoin slides about 50%",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOaGo2cjhBbFJjb2RERHdFVmpoWWlDOERkWFVvd284dGd6VkF2Tnh5UnBFdFo2NldGam1aZmpVeXBrQzVJd3BESDl6aF9YZFk2X2tYWEVrSlVTQmZxREJpcWg1QmtFZkpJeVZvS2lZQkpJVS1rcUNMMGtnTEQwaFBOdkJRWnVSTUdOS0x0M05tYTljMlVUbWJ0NzJZZm9JZ1o2ajd4TWJib0dFZldkMFIyVFpNcUdYQTNQSy1CanVXeDk1TDE3UkFxYlFSTEktUWMwSHNqb3VmUzhZdw?oc=5",
-      "source": "TradingView",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-24T19:03:04Z",
-      "summary": "",
-      "tone": "bearish",
-      "tone_score": -2,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": [
-          "lose",
-          "slides"
-        ]
-      }
-    },
-    {
-      "id": "1fc0d638",
-      "title": "China Gold Imports: What the Reported Record Means",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNZXFEaVR0NjkzeFJiNEF3UlNnWjhSM0pUUTVpelRaSXhYUEtrZkJvNm9zN0t2ektkckdFdm1DWXVUanduUmhUMElOWGNMalJNSzhhbmtPMU5fSm9tcDEtV0VDRnBFZFlINVVaRzYybnR0VmtrU1BWLTd6cUhlVGt1MzNxemVjdFNmRExvMw?oc=5",
-      "source": "GoldSilver",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-24T18:45:46Z",
-      "summary": "",
-      "tone": "neutral",
-      "tone_score": 0,
-      "tone_hits": {
-        "bullish": [],
-        "bearish": []
-      }
-    },
-    {
-      "id": "5ad58be1",
-      "title": "Gold slides despite weaker US Dollar as Fed hike bets dominate",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQS0ZOdGFBRHhfSjBHcF9Wc0pibU9SV1NQTjZQWS0wVDlybVRYWmFRb2tZS0hvWGc4WVlnWFlHblBPTTRRQkJkelI5RnpqaVRETFd4TERnbG5VZ3hoRloySFBiWVNHdUl2eUVDZHdJSzNpc3I5a2xhYjM1Ql92YndnbTNWdnNSREhxZmNRQTAxcG1lMzFBNW1mbHM4b1FEZXgwQ2tXVy12RWxvMzBySUF1UE9VSm90bl91TlJiTGJBeTVRZGMxNVlj?oc=5",
-      "source": "www.tmgm.com",
-      "feed_id": "google-news-gold",
-      "feed_name": "Google News (gold)",
-      "published_utc": "2026-11-24T18:30:29Z",
+      "published_utc": "2026-11-25T11:34:00Z",
       "summary": "",
       "tone": "bearish",
       "tone_score": -1,
       "tone_hits": {
         "bullish": [],
         "bearish": [
-          "slides"
+          "dropped"
         ]
+      }
+    },
+    {
+      "id": "fb2b32b8",
+      "title": "Gold Price Leverage Meets Production Growth: Why LSE:SRB Is in Focus",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZklwVEl4RUdnTTRXTFY3NERSUUFfbnlYVmRJSWFvMHU1eS1tV3c1NUhfcG96aTh4V2ttZ3hPcHJrWTR3WEFuR2xnUmxXUUh5Rjc2ZW5JRC1pNTFTcjhEeHdvOFJybTdxLTVpaEE1N2RvREFiNm1sbEVIaEFMNkQxY082Mkl4eUxPWUtIMWl6bGRVZURqX3NBYnVSR2ticHJUV2c?oc=5",
+      "source": "kalkine.co.uk",
+      "feed_id": "google-news-gold",
+      "feed_name": "Google News (gold)",
+      "published_utc": "2026-11-25T11:28:00Z",
+      "summary": "",
+      "tone": "neutral",
+      "tone_score": 0,
+      "tone_hits": {
+        "bullish": [],
+        "bearish": []
       }
     }
   ],
