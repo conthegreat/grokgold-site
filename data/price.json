@@ -2,25 +2,25 @@
   "ok": true,
   "symbol": "XAUUSD",
   "instrument_label": "Gold spot price, US dollars per troy ounce",
-  "price": 3554.9,
+  "price": 3549.15,
   "currency": "USD",
   "unit": "troy ounce",
   "source": "api.gold-api.com",
   "source_url": "https://api.gold-api.com/price/XAU",
   "fallback_used": null,
-  "provider_time_utc": "2026-11-24T22:34:14Z",
-  "fetched_utc": "2026-11-24T22:34:33Z",
-  "display": "3,554.90",
-  "change_24h_display": "-79.30 USD (-2.18%) in COMEX front-month futures (GC=F), not in the spot print",
+  "provider_time_utc": "2026-11-25T05:03:15Z",
+  "fetched_utc": "2026-11-25T05:03:22Z",
+  "display": "3,549.15",
+  "change_24h_display": "-86.20 USD (-2.37%) in COMEX front-month futures (GC=F), not in the spot print",
   "change_24h": {
     "spot": null,
     "chart_series": {
-      "from_utc": "2026-11-23T21:45:00Z",
-      "to_utc": "2026-11-24T21:59:57Z",
-      "from_price": 3634.4,
-      "to_price": 3555.1,
-      "amount": -79.3,
-      "percent": -2.18,
+      "from_utc": "2026-11-24T05:00:00Z",
+      "to_utc": "2026-11-25T04:52:58Z",
+      "from_price": 3636,
+      "to_price": 3549.8,
+      "amount": -86.2,
+      "percent": -2.37,
       "instrument": "GC=F",
       "label": "COMEX gold futures, front month (GC=F). Not the spot price. Used for the 15-minute chart because no keyless spot-history endpoint responded.",
       "basis": "comex_futures_gc_f"
@@ -40,7 +40,7 @@
       "status": 200,
       "ok": true,
       "error": null,
-      "points": 530
+      "points": 445
     }
   ],
   "error": null
