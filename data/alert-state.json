@@ -1,5 +1,10 @@
 {
-  "sent": {},
+  "sent": {
+    "digest:2026-11-26": {
+      "at": "2026-11-26T07:30:27Z",
+      "message_id": 3
+    }
+  },
   "note": "Keys are written only after Telegram accepts a message. Dry-runs are not recorded.",
-  "updated_utc": "2026-11-21T22:20:49Z"
+  "updated_utc": "2026-11-26T07:30:27Z"
 }
