@@ -2,7 +2,7 @@
   "ok": true,
   "source": "Forex Factory weekly JSON",
   "source_url": "https://nfs.faireconomy.media/ff_calendar_thisweek.json",
-  "fetched_utc": "2026-11-26T17:54:21Z",
+  "fetched_utc": "2026-11-27T01:34:28Z",
   "feed_includes_actual": false,
   "actuals_note": "This fetch did not include an actual field. Post-release alerts wait until a non-empty actual is present. Forecast and previous are the calendar vendor's published figures, not Gold Radar estimates.",
   "filter": "USD high-impact and USD medium-impact events, plus any event whose title mentions gold, XAU, bullion or precious metals.",
